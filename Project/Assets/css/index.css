@@ -1,5 +1,20 @@
 nav {
-    display:flow-root;
-    background-color: aqua;
     
+    
+}
+.navbarlineupper {
+    position: absolute;
+    top:10px;
+    left:0px;
+    width:100%;
+    height: 1px;
+    background: blue;
+}
+.navbarlinelower {
+    position: absolute;
+    top:40px;
+    left:0px;
+    width:100%;
+    height: 1px;
+    background: blue; 
 }
