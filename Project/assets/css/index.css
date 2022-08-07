@@ -32,7 +32,7 @@ ul li {display:inline;}
     position: relative;
     display: inline-block;
     margin-left: auto;
-    margin-right: 0;
+    margin-right: 0px;
 }
 
 .HomeButton {
