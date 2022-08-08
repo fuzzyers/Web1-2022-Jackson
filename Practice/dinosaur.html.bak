@@ -12,8 +12,7 @@
             <li>fish</li>
             <li>bird</li>
         </ul>
-        <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F20%2F2021%2F09%2F10%2Ft-rex-2000.jpg&q=60" alt="DINOSAUR GO ROAR" width="1500">
+        <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F20%2F2021%2F09%2F10%2Ft-rex-2000.jpg&q=60" alt="DINOSAUR GO ROAR" width="1200">
         <a href="https://op.ac.nz" target="_blank">Otago Polytechnic</a> <!-- target _blank will have the link open up into a new tab-->
-
     </body>
 </html>
