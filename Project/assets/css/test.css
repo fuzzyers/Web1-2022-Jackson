@@ -1,0 +1,13 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+
+}
+.wrapper {
+  border:2px solid orange;
+  border-radius: 5px;
+  background-color: white;
+}
+.box {
+  box-sizing: border-box;
+}

@@ -104,8 +104,10 @@ Initial Page Block
 
 div.Top_page_content {
   display: grid;
-  position: relative;
-  grid-template-columns: 1fr 1fr;
+  height:1000px;
+  border: 2px solid black; 
+  border-radius: 5px;
+  background-color: green;
 }
 
 div.TPC_Left img {
@@ -114,6 +116,5 @@ div.TPC_Left img {
 }
 
 div.TPC_Right  {
-    text-align: center;
     
 }
