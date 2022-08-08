@@ -104,17 +104,25 @@ Initial Page Block
 
 div.Top_page_content {
   display: grid;
-  height:1000px;
-  border: 2px solid black; 
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ; 
+  grid-template-rows: 1fr; 
+}
+
+.Top_page_content {
+  border:2px solid orange;
   border-radius: 5px;
-  background-color: green;
+  background-color: white;
 }
 
-div.TPC_Left img {
-  width: 50%;
-  height: 975px;
+.TPC_Left {
+  grid-column: 1/4;
+  grid-row:970px;
 }
 
-div.TPC_Right  {
-    
+.TPC_Left img{
+  width:100%;
+}
+
+.TPC_Right {
+  grid-column:5/7;
 }
