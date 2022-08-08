@@ -1,0 +1,6 @@
+.style{
+    color:green;
+}
+body div:hover {
+    background-color:red;
+}
