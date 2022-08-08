@@ -1,14 +1,20 @@
+body {
+  margin: 0;
+}
+
 nav {
-    display: block;
-    background-color: white;
-    font-size: 16px;
-    position:fixed;
-    width: 100%;    
+  display: block;
+  background-color: white;
+  font-size: 16px;
+  position: fixed;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 
 nav a {
-    padding:15px;
-    text-decoration: none;
+  padding: 15px;
+  text-decoration: none;
 }
 
 /*
@@ -16,85 +22,99 @@ Making Nav horizontal
 */
 
 ul {
-    min-width: 696px;
-    list-style: none ;
-    padding-top: 20px;
-    display: inline;
+  min-width: 696px;
+  list-style: none;
+  padding-top: 20px;
+  display: inline;
 }
 
-ul li {display:inline;}
+ul li {
+  display: inline;
+}
 
 /*
 navigiation menu positioning
 */
 
 .navright {
-    position:relative;
-    left: 40%;
-}
-.navleft {
+  position: relative;
+  left: 40%;
 }
 
+
 .HomeButton {
-    position:relative;
-    left:20%;
+  position: relative;
+  left: 20%;
 }
 
 /*
  Drop down Testing 
  */
 
- .shopbtn {border: none;}
+.shopbtn {
+  border: none;
+}
 
 .Shop {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
 .shopdrop {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    z-index: 1;
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  z-index: 1;
 }
 
-.shopdrop a{
-    color: black;
-    padding: 12px 16px;
-    display: block;
+.shopdrop a {
+  color: black;
+  padding: 12px 16px;
+  display: block;
 }
 
-.shopdrop a:hover {background-color: #ddd;}
+.shopdrop a:hover {
+  background-color: #ddd;
+}
 
-.Shop:hover .shopdrop {display: block; margin-top: 10px;}
+.Shop:hover .shopdrop {
+  display: block;
+  margin-top: 10px;
+}
 
-.Shop:hover .shopbtn {text-decoration: underline;}
+.Shop:hover .shopbtn {
+  text-decoration: underline;
+}
 
 nav a {
-    background-color: #ffffff;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    color:blue;
+  background-color: #ffffff;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: blue;
 }
 
-nav a:hover {text-decoration: underline;}
+nav a:hover {
+  text-decoration: underline;
+}
 
 /*
 Initial Page Block
 */
 
-div.Top_page_content{
-    display:grid;
-    position: relative;
-    grid-template-columns: 1fr 1fr;
+div.Top_page_content {
+  display: grid;
+  height:1000px;
+  border: 2px solid black; 
+  border-radius: 5px;
+  background-color: green;
 }
 
 div.TPC_Left img {
-    grid-area:1;
-    width:50%;
+  width: 50%;
+  height: 975px;
 }
 
-div.TPC_Right h2{
-    grid-area:2;
+div.TPC_Right  {
+    
 }
