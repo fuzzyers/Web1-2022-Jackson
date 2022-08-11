@@ -1,59 +1,179 @@
+:root {
+  --main-color:#006EB6;
+}
 body {
   margin: 0;
 }
 
-nav {
-  display: block;
-  background-color: white;
-  font-size: 16px;
-  position: fixed;
-  width: 100%;
-  padding-top: 20px;
-  padding-bottom: 10px;
-  border-radius: 5px;
-  border-color:blue;
-}
 
-nav a {
-  padding: 15px;
-  text-decoration: none;
-}
 
 /*
+  Z-index sets the forward most container
+
+
 Making Nav horizontal 
 */
 
-ul {
-  min-width: 696px;
-  list-style: none;
-  padding-top: 20px;
-  display: inline;
-}
 
-ul li {
-  display: inline;
-}
 
 /*
 navigiation menu positioning
 */
 
-.navright {
-  position: relative;
-  left: 40%;
+
+
+
+
+/*
+Initial Page Block
+*/
+
+div.Top_page_content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr; 
+  grid-row:330px;
 }
+
+.Top_page_content {
+  border:2px solid orange;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.TPC_Left {
+  grid-column: 1/7;
+  grid-row:1/4;
+  height:100%;
+}
+
+.TPC_Left img{
+  height:100%;
+  width:100%;
+  object-fit: contain;
+}
+
+.TPC_Right {
+  grid-column:8/12;
+  grid-row:2/2;
+  
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color:rgb(30, 138, 211);
+  font-size: 50px;
+}
+
+.TPC_Right button {
+  margin-top: 40px;
+}
+
+button {
+  background-color: white; /* Green */
+  border: 1px solid blue;
+  color: blue;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.Searchbar {
+  display:none;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+Navigation WIP
+*/
+
+
+nav {
+  position: fixed;
+  display:flex;
+  width: 100%;
+  background-color: #ffffff;
+  height:7.5%;
+}
+
+.navbar{
+  display: flex;
+  width:100%;
+  align-items: center;
+  justify-content:center;
+}
+
+.navright{
+  justify-content:flex-end;
+  margin-right:20px ;
+}
+
+.navleft {
+  justify-content: flex-start;
+}
+
+li{
+  margin-left: 20px;
+}
+
+
+
+
+
+
 
 
 .HomeButton {
-  position: relative;
-  left: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  left: 50%;
+  top:45px;
+  transform: translate(-50%, -50%);
+  z-index: 5;
 }
 
+
+ul {
+  list-style: none;
+  padding:15px;
+}
+
+
+
+
+
+
+
+
+
+
+
 /*
- Drop down Testing 
+ Drop down Button 
  */
 
-.shopbtn {
+ .shopbtn {
   border: none;
 }
 
@@ -93,64 +213,31 @@ nav a {
   background-color: #ffffff;
   padding-top: 5px;
   padding-bottom: 5px;
-  color: blue;
+  color: var(--main-color);
 }
 
 nav a:hover {
   text-decoration: underline;
 }
 
+
 /*
-Initial Page Block
+Assume this will not need changed
 */
 
-div.Top_page_content {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
-  grid-template-rows: 1fr 1fr 1fr; 
-  grid-row:330px;
-}
 
-.Top_page_content {
-  border:2px solid orange;
-  border-radius: 5px;
-  background-color: white;
-}
-
-.TPC_Left {
-  grid-column: 1/7;
-  grid-row:1/4;
-  height:100%;
-}
-
-.TPC_Left img{
-  height:100%;
+.navtopbar, .navbottombar {
+  position:absolute;
+  top: 10px;
+  left:0;
   width:100%;
-  object-fit: contain;
+  height:1px;
+  background: blue;
+  z-index: 11;
+
 }
 
-.TPC_Right {
-  grid-column:8/12;
-  grid-row:2/2;
-  
-}
-h2 {
-  font-family: Arial, Helvetica, sans-serif;
-  color:rgb(30, 138, 211);
-  font-size: 50px;
-}
-
-.TPC_Right button {
-  margin-top: 40px;
-}
-
-button {
-  background-color: white; /* Green */
-  border: 1px solid blue;
-  color: blue;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+.navbottombar {
+  top:auto;
+  bottom:0;
 }

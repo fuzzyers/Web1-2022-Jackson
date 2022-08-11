@@ -1,0 +1,50 @@
+
+nav {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  z-index: 20;
+  background-color: white;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+.nabar  > li {
+  display: flex;
+  align-items: stretch;
+}
+
+.navright {
+  margin-left: auto;
+  flex:1;
+}
+
+.navleft {
+  margin-right: auto;
+}
+
+.HomeButton {
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+}
+
+ul {
+  min-width: 696px;
+  list-style: none;
+  padding-top: 20px;
+  display: flex;
+}
+
+ul li {
+  margin-left: 20px;
+}
+
