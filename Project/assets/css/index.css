@@ -4,29 +4,154 @@
 body {
   margin: 0;
 }
-
-
-
 /*
-  Z-index sets the forward most container
-
-
-Making Nav horizontal 
+##################Navigation WIP####################
 */
 
 
+nav {
+  position: fixed;
+  display:flex;
+  width: 100%;
+  background-color: #ffffff;
+  height:7.5%;
+}
+
+.navbar{
+  display: flex;
+  width:100%;
+  justify-content:center;
+}
+
+.navright{
+  justify-content:flex-end;
+  margin-right:20px ;
+}
+
+.navleft {
+  justify-content: flex-start;
+}
+
+li{
+  margin-left: 20px;
+}
+
+.HomeButton {
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  left: 50%;
+  top:45px;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+}
+
+.navtopbar, .navbottombar {
+  position:absolute;
+  top: 10px;
+  left:0;
+  width:100%;
+  height:0.5px;
+  background: blue;
+  z-index: 11;
+
+}
+
+.navbottombar {
+  top:70px;
+  bottom:0;
+}
+
+ul li{
+  list-style: none;
+  padding:15px;
+}
 
 /*
-navigiation menu positioning
-*/
+ Drop down Button 
+ */
+
+ .shopbtn {
+  border: none;
+}
+
+.Shop {
+  position: relative;
+  display: inline-block;
+}
+
+.shopdrop {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.shopdrop a {
+  color: black;
+  padding: 12px 16px;
+  display: block;
+}
+
+.shopdrop a:hover {
+  background-color: #ddd;
+}
+
+.Shop:hover .shopdrop {
+  display: block;
+  margin-top: 10px;
+}
+
+.Shop:hover .shopbtn {
+  text-decoration: underline;
+}
+
+nav a {
+  background-color: #ffffff;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: var(--main-color);
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
 
 
 
 
 
-/*
-Initial Page Block
-*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 div.Top_page_content {
   display: grid;
@@ -103,61 +228,6 @@ button {
 
 
 
-/*
-Navigation WIP
-*/
-
-
-nav {
-  position: fixed;
-  display:flex;
-  width: 100%;
-  background-color: #ffffff;
-  height:7.5%;
-}
-
-.navbar{
-  display: flex;
-  width:100%;
-  align-items: center;
-  justify-content:center;
-}
-
-.navright{
-  justify-content:flex-end;
-  margin-right:20px ;
-}
-
-.navleft {
-  justify-content: flex-start;
-}
-
-li{
-  margin-left: 20px;
-}
-
-
-
-
-
-
-
-
-.HomeButton {
-  margin-left: auto;
-  margin-right: auto;
-  position: absolute;
-  left: 50%;
-  top:45px;
-  transform: translate(-50%, -50%);
-  z-index: 5;
-}
-
-
-ul {
-  list-style: none;
-  padding:15px;
-}
 
 
 
@@ -169,56 +239,8 @@ ul {
 
 
 
-/*
- Drop down Button 
- */
 
- .shopbtn {
-  border: none;
-}
 
-.Shop {
-  position: relative;
-  display: inline-block;
-}
-
-.shopdrop {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  z-index: 1;
-}
-
-.shopdrop a {
-  color: black;
-  padding: 12px 16px;
-  display: block;
-}
-
-.shopdrop a:hover {
-  background-color: #ddd;
-}
-
-.Shop:hover .shopdrop {
-  display: block;
-  margin-top: 10px;
-}
-
-.Shop:hover .shopbtn {
-  text-decoration: underline;
-}
-
-nav a {
-  background-color: #ffffff;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  color: var(--main-color);
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
 
 
 /*
@@ -226,18 +248,3 @@ Assume this will not need changed
 */
 
 
-.navtopbar, .navbottombar {
-  position:absolute;
-  top: 10px;
-  left:0;
-  width:100%;
-  height:1px;
-  background: blue;
-  z-index: 11;
-
-}
-
-.navbottombar {
-  top:auto;
-  bottom:0;
-}
