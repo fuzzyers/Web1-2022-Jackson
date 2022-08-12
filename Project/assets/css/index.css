@@ -10,51 +10,17 @@ body {
 /*
 ##################Navigation WIP####################
 */
-a {
-  font-family: var(--main-font);
-  color: var(--main-color);
-}
-
-h1 {
-  font-size: var(--large-font);
-  color: var(--main-color);
-}
-
 nav {
   position: fixed;
   display:flex;
   width: 100%;
   background-color: #ffffff;
-  height:7.5%;
 }
 
 .navbar{
   display: flex;
   width:100%;
   justify-content:center;
-}
-
-.navright{
-  justify-content:flex-end;
-  margin-right:20px ;
-}
-
-.navleft {
-  justify-content: flex-start;
-}
-
-li{
-  margin-left: 20px;
-}
-
-.HomeButton {
-  margin-left: auto;
-  margin-right: auto;
-  position: absolute;
-  left: 50%;
-  top:45px;
-  transform: translate(-50%, -50%);
-  z-index: 5;
 }
 
 .navtopbar, .navbottombar {
@@ -73,15 +39,48 @@ li{
   bottom:0;
 }
 
+.navright{
+  justify-content:flex-end;
+  margin-right:20px ;
+  padding-top: 13px;
+}
+
+.navleft {
+  justify-content: flex-start;
+  padding-top: 13px;
+}
+
+.HomeButton {
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  left: 50%;
+  top:40px;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+}
+
 ul li{
   list-style: none;
-  padding:15px;
+}
+
+li{
+  margin-left: 20px;
+}
+
+h1 {
+  font-size: var(--large-font);
+  color: var(--main-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 a {
+  font-family: var(--main-font);
+  color: var(--main-color);
   text-decoration: none;
 }
-
 /*
  Drop down Button 
  */
@@ -128,7 +127,10 @@ img {
   padding-left: 70px;
   padding-right: 70px;
   grid-column: 2/2;
-  text-align: center;
+  justify-content: center;
+}
+.TPC_Right > h1 {
+  padding-top:40vh ;
 }
 
 
