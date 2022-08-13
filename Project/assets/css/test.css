@@ -1,13 +1,36 @@
-.wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+:root {
+  --main-color:#006EB6;
+  --main-font:"Comfortaa Light";
+  --secondary-font:"Book Antiqua";
+  --large-font:53px;
+}
 
+h1 {
+  color: var(--main-color);
+  font: var(--large-font) var(--secondary-font);
+  font-weight: 750;
 }
-.wrapper {
-  border:2px solid orange;
-  border-radius: 5px;
-  background-color: white;
+
+.segement-1 {
+  display: grid;
+  height: 94vh;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  grid-gap: 1rem; /*remove later*/
 }
-.box {
-  box-sizing: border-box;
+
+.segement-1 > div {
+  background: lightcoral;
 }
+
+.col2 > h1{
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
+.col2 > button {
+  color: var(--main-color);
+  border:solid 1px var(--main-color);
+  padding: 20px;
+}
+
+
