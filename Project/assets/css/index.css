@@ -135,7 +135,7 @@ a {
 */
 
 .dividergap {
-  display: flex;
+  display: flexbox;
 }
 
 .dividergap ul {
