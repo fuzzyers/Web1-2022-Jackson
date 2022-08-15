@@ -1,0 +1,51 @@
+
+div.Top_page_content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+  grid-template-rows: 67px 20% 20% 20% 20%; 
+}
+
+.Top_page_content {
+  border:2px solid orange;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.TPC_Left {
+  grid-column: 1/7;
+  grid-row:2/5;
+  height:100%;
+}
+
+.TPC_Left img{
+  height:100%;
+  width:100%;
+}
+
+.TPC_Right {
+  grid-column:8/12;
+  grid-row:3/3;
+  
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color:rgb(30, 138, 211);
+  font-size: 50px;
+}
+
+.TPC_Right button {
+  margin-top: 40px;
+}
+
+button {
+  background-color: white; /* Green */
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+

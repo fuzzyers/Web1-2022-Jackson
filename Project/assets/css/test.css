@@ -1,13 +1,142 @@
-.wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+:root {
+  --main-color:#006EB6;
+  --main-font:"Comfortaa Light";
+  --secondary-font:"Book Antiqua";
+  --large-font:53px;
+  --nav-height:71.5px;
+  --break-height:45px; /* Guessitmate */
+}
 
-}
-.wrapper {
-  border:2px solid orange;
-  border-radius: 5px;
-  background-color: white;
-}
-.box {
+* {
   box-sizing: border-box;
+}
+
+body {
+  margin:0;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  color: var(--main-color);
+  font: var(--large-font) var(--secondary-font);
+  font-weight: 750;
+}
+
+.segement-1 .col--100vh {
+  height: calc(100vh - var(--nav-height) - var(--break-height));
+}
+
+.segement-1 {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+}
+
+.col1 > img {
+  object-fit: cover;
+  height: 100% ;
+  width: 100%;
+}
+
+.col2 h1{
+  top:25%;
+  margin-left: 5%;
+  margin-right:5%;
+}
+
+.col2 button {
+  display: inline;
+  color: var(--main-color);
+  border:solid 1px var(--main-color);
+  padding: 20px;
+  top: 60%;
+  left:25%;
+  margin: 0;
+}
+
+/*
+######################
+#     Nav bar        #
+######################
+*/
+
+nav {
+  position: fixed;
+  display:flex;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 10;
+}
+
+.navbar{
+  display: flex;
+  width:100%;
+  justify-content:center;
+}
+
+.navtopbar, .navbottombar {
+  position:absolute;
+  top: 10px;
+  left:0;
+  width:100%;
+  height:1px;
+  background: var(--main-color);
+  z-index: 11;
+}
+
+.navbottombar {
+  top:70px;
+  bottom:0;
+}
+
+.navright{
+  justify-content:flex-end;
+  margin-right:20px ;
+  padding-top: 12px;
+}
+
+.navleft {
+  justify-content: flex-start;
+  padding-top: 12px;
+}
+
+.HomeButton {
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  left: 50%;
+  top:40px;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+}
+
+ul li{
+  list-style: none;
+}
+li{
+  margin-left: 20px;
+}
+
+a {
+  font-family: var(--main-font);
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+
+/*
+######################
+#   Ignore for now   #
+######################
+*/
+
+.shopdrop {
+  display: none;
+}
+
+.Searchbar {
+  display:none;
 }
