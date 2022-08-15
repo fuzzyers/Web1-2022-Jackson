@@ -22,7 +22,7 @@ img {
 h1 {
   color: var(--main-color);
   font: var(--large-font) var(--secondary-font);
-  font-weight: 750;
+  font-weight: 900;
 }
 
 .segement-1 {
@@ -44,18 +44,17 @@ h1 {
 
 .col2 h1{
   place-items: center;
+  margin-top: 35%;
   margin-left: 5%;
   margin-right:5%;
 }
 
 .col2 button {
-  display: inline;
+  position: relative;
   color: var(--main-color);
   border:solid 1px var(--main-color);
   padding: 20px;
-  top: 60%;
-  left:25%;
-  margin: 0;
+  left: 25%;
 }
 
 /*
@@ -129,6 +128,34 @@ a {
   text-decoration: none;
 }
 
+/*
+######################
+#    Break Box       #
+######################
+*/
+
+.dividergap {
+  display: flex;
+}
+
+.dividergap ul {
+  display: inline-flex;
+  position: relative;
+}
+
+
+.topbar, .bottombar {
+  position:relative;
+  left:0;
+  width:100%;
+  height:1px;
+  background: var(--main-color);
+  z-index: 11;
+}
+
+.bottombar {
+  top: var(--break-height);
+}
 
 /*
 ######################
