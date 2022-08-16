@@ -3,10 +3,18 @@
   --main-font:"Comfortaa Light";
   --secondary-font:"Book Antiqua";
   --large-font:3.75rem;
-  --medium-font:2rem;
+  --medium-font:2.5rem;
   --nav-height:71px;
   --break-height:45px; /* Guessitmate */
+  --history-height:65vh; /* Guestimate*/
+  --future-height:100vh;
 }
+
+
+/*###########################
+##      Global Settings    ##
+###########################*/
+
 
 * {
   box-sizing: border-box;
@@ -27,7 +35,20 @@ h1 {
 }
 
 h2 {
+  font-size: var(--medium-font);
+  font-weight: 900; 
+  color: var(--main-color);
+}
 
+a:hover {
+  text-decoration: underline;
+}
+
+ul li{
+  list-style: none;
+}
+li{
+  margin-left: 20px;
 }
 
 .segement-1 {
@@ -120,13 +141,6 @@ nav {
   z-index: 5;
 }
 
-ul li{
-  list-style: none;
-}
-li{
-  margin-left: 20px;
-}
-
 a {
   font-family: var(--main-font);
   color: var(--main-color);
@@ -139,15 +153,21 @@ a {
 ######################
 */
 
-.dividergap {
-  display: flexbox;
+.dividergap > .hero {
+  display: flex;
+  justify-content: center;
 }
 
-.dividergap ul {
+.hero li {
   display: inline-flex;
-  position: relative;
 }
 
+.dot::after {
+  padding-left:15%;
+  content:"·";
+  font-size: large;
+  color: var(--main-color);
+}
 
 .topbar, .bottombar {
   position:relative;
@@ -168,6 +188,49 @@ a {
 ######################
 */
 
+.history {
+  height: var(--history-height);
+}
+
+.text {
+  margin-left: 30%;
+  margin-right: 30%;
+  text-align: center;
+}
+
+.bird img {
+  height: 300px;
+  width: auto;
+  margin-left: 40%;
+  margin-right:40% ;
+}
+
+/*
+######################
+#       future       #
+######################
+*/
+
+.future {
+  display: grid;
+  border: #006EB6;
+  grid-template-rows: 15vh 1fr 1fr ;
+  grid-template-columns: 30% 40% 30%;
+  height: calc(var(--future-height) - var(--nav-height));
+}
+
+.banner {
+  display: flex;
+  grid-column: 1/4;
+  grid-row: 1;
+  justify-content: center;
+}
+
+.center {
+  grid-row: 2/4;
+  grid-column: 2;
+}
+
 
 
 /*
@@ -183,3 +246,9 @@ a {
 .Searchbar {
   display:none;
 }
+
+
+.icon--hover {
+  visibility: hidden;
+}
+
