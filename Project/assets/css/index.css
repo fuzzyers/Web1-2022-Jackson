@@ -51,6 +51,14 @@ li{
   margin-left: 20px;
 }
 
+
+/*
+######################
+#     Firstsegment   #
+######################
+*/
+
+
 .segement-1 {
   display: grid;
   position: relative;
@@ -62,6 +70,10 @@ li{
   height: calc(100vh - var(--nav-height) - var(--break-height));
 }
 
+.col2 {
+  place-items: center;
+}
+
 .col1 > img {
   object-fit: cover;
   height: 100% ;
@@ -69,18 +81,16 @@ li{
 }
 
 .col2 h1{
-  place-items: center;
-  margin-top: 35%;
-  margin-left: 5%;
-  margin-right:5%;
+  padding: 0 70px;
+
 }
 
 .col2 button {
   position: relative;
+  justify-content: center;
   color: var(--main-color);
   border:solid 1px var(--main-color);
   padding: 20px;
-  left: 25%;
 }
 
 /*
@@ -199,8 +209,18 @@ a {
 }
 
 .bird img {
+  display: block;
   height: 300px;
   width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.squiglycircle {
+  display: flex;
+  position:relative;
+  right: 230px;
+  z-index: 4;
 }
 
 /*
