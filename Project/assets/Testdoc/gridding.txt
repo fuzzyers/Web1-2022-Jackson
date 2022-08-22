@@ -1,0 +1,17 @@
+.fairtrade {
+}
+
+.center > img {
+  object-fit: cover;
+}
+
+.future-icon {
+  height: 80px;
+  width: auto;
+  margin-bottom:20px;
+}
+.future > div {
+  text-align: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}

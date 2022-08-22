@@ -246,10 +246,15 @@ a {
 
 .future {
   display: grid;
-  border: #006EB6;
-  grid-template-rows: 1fr 1fr ;
+  grid-template-rows: 350px 350px ;
   grid-template-columns: 30% 40% 30%;
-  height: calc(var(--future-height) - var(--nav-height));
+  border-bottom:1px solid var(--main-color);
+}
+
+.future > div:not(.center) > img {
+  height: 80px;
+  width: auto;
+  text-align: center;
 }
 
 .center {
@@ -259,12 +264,11 @@ a {
 
 .center > img {
   object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
 
-.future div:nth-of-type(even):not(.center) {
-  border-bottom:1px solid var(--main-color);
-  border-right:1px solid var(--main-color);
-}
+
 
 
 
