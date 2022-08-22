@@ -355,7 +355,6 @@ a {
 */
 
 .dividergap2 {
-  
   border-top: var(--border-settings);
   border-bottom: var(--border-settings);
 }
