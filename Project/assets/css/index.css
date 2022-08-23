@@ -77,7 +77,10 @@ li{
 }
 
 .col2 {
+  display: flex;
   place-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .col1 > img {
@@ -91,9 +94,11 @@ li{
 
 }
 
+.buttons {
+  margin:0;
+}
+
 .col2 button {
-  position: relative;
-  justify-content: center;
   color: var(--main-color);
   border:solid 1px var(--main-color);
   padding: 20px;
