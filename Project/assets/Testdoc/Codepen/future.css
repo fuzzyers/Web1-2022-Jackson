@@ -1,0 +1,31 @@
+.future {
+  display:flex;
+  
+}
+
+.leftcol {
+  flex-direction: column;
+  height:100%;
+}
+
+.center {
+  width: 40%;
+}
+
+.center > img {
+  object-fit:cover;
+  height:100%;
+  width:100%;
+}
+
+.rightcol {
+  height:100%;
+}
+
+.future > div > div > img {
+  height:80px;
+}
+
+.fairtrade {
+  height:50%;
+}
