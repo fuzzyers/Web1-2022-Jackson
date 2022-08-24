@@ -76,6 +76,7 @@ li{
   height: calc(100vh - var(--nav-height) - var(--break-height));
 }
 
+
 .col2 {
   display: flex;
   place-items: center;
