@@ -57,54 +57,6 @@ li{
   margin-left: 20px;
 }
 
-
-/*
-######################
-#     Firstsegment   #
-######################
-*/
-
-
-.segement-1 {
-  display: grid;
-  position: relative;
-  margin-top: var(--nav-height);
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-}
-
-.segement-1 .col--100vh {
-  height: calc(100vh - var(--nav-height) - var(--break-height));
-}
-
-
-.col2 {
-  display: flex;
-  place-items: center;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.col1 > img {
-  object-fit: cover;
-  height: 100% ;
-  width: 100%;
-}
-
-.col2 h1{
-  padding: 0 70px;
-
-}
-
-.buttons {
-  margin:0;
-}
-
-.col2 button {
-  color: var(--main-color);
-  border:solid 1px var(--main-color);
-  padding: 20px;
-}
-
 /*
 ######################
 #     Nav bar        #
@@ -168,6 +120,54 @@ a {
   color: var(--main-color);
   text-decoration: none;
 }
+
+/*
+######################
+#     Firstsegment   #
+######################
+*/
+
+
+.segement-1 {
+  display: grid;
+  position: relative;
+  margin-top: var(--nav-height);
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+}
+
+.segement-1 .col--100vh {
+  height: calc(100vh - var(--nav-height) - var(--break-height));
+}
+
+.col2 {
+  display: flex;
+  place-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.col1 > img {
+  object-fit: cover;
+  height: 100% ;
+  width: 100%;
+}
+
+.col2 h1{
+  padding: 0 70px;
+
+}
+
+.buttons {
+  margin:0;
+}
+
+.col2 button {
+  color: var(--main-color);
+  border:solid 1px var(--main-color);
+  padding: 20px;
+}
+
+
 
 /*
 ######################
@@ -345,9 +345,6 @@ a {
 ######################
 */
 
-.reports {
-}
-
 .reports img {
   overflow: hidden;
   padding:5%;
@@ -394,7 +391,6 @@ a {
   justify-content: flex-start;
   flex-direction: row;
   flex-wrap: nowrap;
-  width: 80vw;
   height: 100%;
 }
 
