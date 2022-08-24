@@ -1,0 +1,46 @@
+.future {
+  display:flex;
+  height: 100vh;
+}
+
+.leftcol {
+  flex-direction: column;
+  height:100%;
+  width:30%;
+}
+
+.center {
+  width: 40%;
+}
+
+.center > img {
+  object-fit:cover;
+  height:100%;
+  width:100%;
+}
+
+.rightcol {
+  height:100%;
+  width:30%;
+}
+
+.future > div > div > img {
+  height:80px;
+}
+
+.fairtrade {
+  height:50%;
+  
+}
+
+.climatefund {
+  height:50%;
+}
+
+.organic {
+  height:50%;
+}
+
+.packaging {
+  height:50%;
+}
