@@ -94,26 +94,46 @@ nav {
   bottom:0;
 }
 
-.navright{
-  justify-content:flex-end;
-  margin-right:30px ;
-  padding-top: 12px;
+@media screen and (min-width:1050px)
+{
+  .navright{
+    justify-content:flex-end;
+    margin-right:30px ;
+    padding-top: 12px;
+  }
+  
+  .navleft {
+    justify-content: flex-start;
+    padding-top: 12px;
+  }
+  
+  .HomeButton {
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    left: 50%;
+    top:40px;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+  }
 }
 
-.navleft {
-  justify-content: flex-start;
-  padding-top: 12px;
+@media only screen and (max-width: 1049px) 
+{
+  .navright{
+    visibility:hidden ;
+  }
+  
+  .navleft {
+    visibility:hidden ;
+  }
+  
+  .HomeButton {
+    visibility:hidden ;
+  }
 }
 
-.HomeButton {
-  margin-left: auto;
-  margin-right: auto;
-  position: absolute;
-  left: 50%;
-  top:40px;
-  transform: translate(-50%, -50%);
-  z-index: 5;
-}
+
 
 
 
