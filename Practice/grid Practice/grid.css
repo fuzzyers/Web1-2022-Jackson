@@ -1,7 +1,5 @@
 :root {
     --stagger-delay:100ms;
-
-
 }
 .basic-grid {
     display: grid;

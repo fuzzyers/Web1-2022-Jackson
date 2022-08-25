@@ -46,7 +46,7 @@ h2 {
   margin: 0;
 }
 
-a:hover {
+a:hover:not(.navcart--icon) {
   text-decoration: underline;
 }
 
@@ -93,12 +93,10 @@ nav {
   top:70px;
   bottom:0;
 }
-
 @media screen and (min-width:1050px)
 {
   .navright{
     justify-content:flex-end;
-    margin-right:30px ;
     padding-top: 12px;
   }
   
@@ -118,22 +116,26 @@ nav {
   }
 }
 
-@media only screen and (max-width: 1049px) 
-{
-  .navright{
-    visibility:hidden ;
-  }
-  
-  .navleft {
-    visibility:hidden ;
-  }
-  
-  .HomeButton {
-    visibility:hidden ;
-  }
+.navcart--icon {
+  display: grid;
+  position: relative;
+  margin-right: 10px;
 }
 
+.icon--normal {
+  grid-row: 1;
+  grid-column: 1;
+}
 
+.icon--hover {
+  visibility: hidden;
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.navcart--icon:hover .icon--hover {
+  visibility: visible;
+}
 
 
 
@@ -196,9 +198,8 @@ Dropdown
 
 .col2 {
   display: flex;
-  place-items: center;
   flex-direction: column;
-  justify-content: center;
+  justify-content:center ;
 }
 
 .col1 > img {
@@ -209,12 +210,11 @@ Dropdown
 
 .col2 h1{
   padding: 0 70px;
-
 }
 
 .buttons {
   font-size: 0;
-  justify-content: flex-start;
+  padding-left: 70px;
 }
 
 .col2 button {
@@ -222,6 +222,22 @@ Dropdown
   border:solid 1px var(--main-color);
   padding: 20px;
   width: 230px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.buttons > button:nth-child(1):hover{
+  background-color: var(--main-color);
+  color: white;
+}
+
+.buttons > button:nth-child(2):hover{
+  background-color: var(--main-color);
+  color: white;
+}
+
+.buttons > button:nth-child(2){
+  margin-left: -1px;
 }
 
 
@@ -595,7 +611,5 @@ footer {
 }
 
 
-.icon--hover {
-  visibility: hidden;
-}
+
 
