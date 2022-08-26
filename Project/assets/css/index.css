@@ -196,16 +196,31 @@ Dropdown
   height: calc(100vh - var(--nav-height) - var(--break-height));
 }
 
+.col1 {
+  position: relative;
+}
+
+.col1 > img {
+  position: absolute;
+  height: 100% ;
+  width: 100%;
+}
+
+.col1 > :nth-child(2) {
+  visibility: hidden;
+}
+.col1 > :nth-child(3) {
+  visibility: hidden;
+}
+
+.buttons:nth-child(1):hover .col1 > :nth-child(2) {
+  visibility: visible;
+}
+
 .col2 {
   display: flex;
   flex-direction: column;
   justify-content:center ;
-}
-
-.col1 > img {
-  object-fit: cover;
-  height: 100% ;
-  width: 100%;
 }
 
 .col2 h1{ /* Website Style copied */
