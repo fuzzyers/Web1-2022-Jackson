@@ -603,6 +603,7 @@ Dropdown
 footer {
   display: grid;
   grid-template-columns: 8fr 2fr;
+  grid-gap: 1px;
 }
 
 .grid-1 {
