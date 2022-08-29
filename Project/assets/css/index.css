@@ -53,9 +53,7 @@ a:hover:not(.navcart--icon) {
 ul li{
   list-style: none;
 }
-li{
-  margin-left: 20px;
-}
+
 
 a {
   font-family: var(--main-font);
@@ -87,6 +85,11 @@ nav {
   width:100%;
   align-items: center;
   border-top: var(--border-settings);
+}
+
+
+.navbar li{
+  margin-left: 20px;
 }
 
 .navbottombar {
@@ -284,6 +287,11 @@ Dropdown
   color: var(--main-color);
 }
 
+
+.dot {
+  margin-right: 20px;
+}
+
 .topbar, .bottombar {
   position:relative;
   left:0;
@@ -359,10 +367,11 @@ Dropdown
 
 .future > div:not(.center) > div {
   display: flex;
-  margin:5%;
   flex-direction:column ;
+  justify-content: center;
   align-items: center;
   text-align: center;
+  padding:5% ;
 }
 
 .center > img {
@@ -398,51 +407,95 @@ Dropdown
 
 .featured {
   display: grid;
-  grid-template-columns: 10vw 1fr;
+  grid-template-columns: 6.5vw 1fr;
   height: var(--featured-height);
 }
 
 .featuredbanner {
-  grid-column: 1;
+  display: flex;
+  flex-direction: column;
   border-right: var(--border-settings) ;
   border-bottom: var(--border-settings);
 }
 
 .featuredbanner > h2 {
-  transform: translate(0%) rotate(-90deg) translate(-100%);
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  align-self: center;
+  margin-top: 40px;
   /*I dont understand the transform property reasearch*/
+}
+
+.col--2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows:1fr 24vh;
+}
+
+.col--2 > div > {
+  display: flex;
+  flex-direction: column;
+}
+
+.col--2 img {
+  height: 35vw;
+  width: auto;
+}
+
+.contents:nth-child(1):nth-child(1) {
+  text-align: center;
+}
+
+.content--items ul li {
+  display: inline;
+}
+
+.content--items ul {
+  padding-left: 0;
+}
+
+.content--items ul li::after {
+  content: ".";
+  padding-left:5px;
+  font-size: large;
+}
+
+.content--items ul li:last-child:after {
+  content: "";
 }
 
 .contents {
   display: grid;
-  grid-column:2 ;
+  grid-gap: 80px;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows:1fr var(--conend-height);
+  margin: 5%;
 }
-
-.contents > div > {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-
-}
-
-.contents img {
-  height: 50%;
-  width: auto;
-}
-
 
 .conend{
   display: flex;
+  flex-direction: column;
   grid-row: 2;
   grid-column: 1/4;
   justify-content: center;
+  text-align: center;
   padding-top: var(--space-70);
   border-top: var(--border-settings);
   border-bottom: var(--border-settings);
 }
 
+.expandcontent {
+  font-size: 0;
+}
+
+.expandcontent > button:nth-child(2) {
+  margin-left: -1px ;
+}
+
+.expandcontent > button {
+  padding: 10px;
+  border: var(--border-settings);
+  color: var(--main-color);
+}
 
 /*
 ######################
@@ -450,11 +503,6 @@ Dropdown
 ######################
 */
 
-.reports img {
-  overflow: hidden;
-  padding:5%;
-  height: 80%;
-}
 
 /*
 ######################
@@ -608,8 +656,14 @@ footer {
 
 .grid-1 {
   display:grid;
+  grid-gap: 4px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 0.5fr;
+}
+
+.grid-1:nth-child(1){
+  background-color: var(--main-color);
+  color:white;
 }
 
 .newsletter {
