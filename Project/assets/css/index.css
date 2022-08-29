@@ -96,27 +96,8 @@ nav {
   top:70px;
   bottom:0;
 }
-@media screen and (min-width:1050px)
-{
-  .navright{
-    justify-content:flex-end;
-    padding-top: 12px;
-  }
+@media only screen and (max-width:1050px) {
   
-  .navleft {
-    justify-content: flex-start;
-    padding-top: 12px;
-  }
-  
-  .HomeButton {
-    margin-left: auto;
-    margin-right: auto;
-    position: absolute;
-    left: 50%;
-    top:40px;
-    transform: translate(-50%, -50%);
-    z-index: 5;
-  }
 }
 
 .navcart--icon {
@@ -140,7 +121,25 @@ nav {
   visibility: visible;
 }
 
+.navright{
+  justify-content:flex-end;
+  padding-top: 12px;
+}
 
+.navleft {
+  justify-content: flex-start;
+  padding-top: 12px;
+}
+
+.HomeButton {
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  left: 50%;
+  top:40px;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+}
 
 
 /*
