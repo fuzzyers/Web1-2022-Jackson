@@ -46,6 +46,10 @@ h2 {
   margin: 0;
 }
 
+h3 {
+  
+}
+
 a:hover:not(.navcart--icon) {
   text-decoration: underline;
 }
@@ -95,9 +99,6 @@ nav {
 .navbottombar {
   top:70px;
   bottom:0;
-}
-@media only screen and (max-width:1050px) {
-  
 }
 
 .navcart--icon {
@@ -206,6 +207,7 @@ Dropdown
   position: absolute;
   height: 100% ;
   width: 100%;
+  object-fit: cover;
 }
 
 .col1 > :nth-child(2) {
@@ -261,6 +263,7 @@ Dropdown
 .buttons > button:nth-child(2){
   margin-left: -1px;
 }
+
 
 
 
@@ -508,13 +511,26 @@ Dropdown
 
 /*
 ######################
-#     #
+#   Divider Gap      #
 ######################
 */
 
 .dividergap2 {
+  display: flex;
+  padding-top: var(--space-80);
+  padding-bottom: var(--space-80);
   border-top: var(--border-settings);
-  border-bottom: var(--border-settings);
+  align-content: center;
+  width: 100%;
+}
+
+.dividergap2 h3 {
+  justify-content: left;
+  width: 100%;
+}
+
+.dividergap2 h6 {
+  justify-content: right;
 }
 
 
@@ -699,6 +715,34 @@ footer {
   display:none;
 }
 
+/*
+######################
+#    Media Queries   #
+######################
+*/
 
+@media only screen and (max-width:960px) {
+  .segement-1 {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+  .col1 {
+    grid-row: 2;
+  }
+  .col2 {
+    display:flex;
+    padding: var(--space-70);
+    height: auto;
+  }
 
+  .col2 h1 {
+    padding: 0;
+  }
+  .segement-1 .col--100vh {
+    height: auto;
+  }
+  .buttons {
+    padding: 0;
+  }
+}
 

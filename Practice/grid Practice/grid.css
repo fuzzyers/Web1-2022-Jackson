@@ -57,7 +57,7 @@
 
 .card {
     background-color: rgb(36, 243, 147);
-    animation: cardEntrance 700ms easeout;
+    animation: cardEntrance 700ms;
     animation-fill-mode: backwards;
 }
 
