@@ -407,7 +407,7 @@ Dropdown
 .featured {
   display: grid;
   grid-template-columns: 6.5vw 1fr;
-  height: var(--featured-height);
+  height: 130vh;
 }
 
 .featuredbanner {
@@ -502,6 +502,9 @@ Dropdown
 ######################
 */
 
+.reports {
+  margin: 5%;
+}
 
 /*
 ######################
