@@ -175,12 +175,6 @@ Dropdown
 }
 
 
-
-
-
-
-
-
 /*
 ######################
 #     Firstsegment   #
@@ -210,16 +204,6 @@ Dropdown
   object-fit: cover;
 }
 
-.col1 > :nth-child(2) {
-  visibility: hidden;
-}
-.col1 > :nth-child(3) {
-  visibility: hidden;
-}
-
-.buttons:nth-child(1):hover .col1 > :nth-child(2) {
-  visibility: visible;
-}
 
 .col2 {
   display: flex;
@@ -227,7 +211,7 @@ Dropdown
   justify-content:center ;
 }
 
-.col2 h1{ /* Website Style copied */
+.col2 > h1{ /* Website Style copied */
   padding: 0 70px;
   font-family: "Monday";
   font-style: normal;
@@ -250,12 +234,17 @@ Dropdown
   margin-top: 20px;
 }
 
-.buttons > button:nth-child(1):hover{
-  background-color: var(--main-color);
-  color: white;
+.col1 > img:nth-child(2),
+.col1 > img:nth-child(3) {
+  opacity: 0;
 }
 
-.buttons > button:nth-child(2):hover{
+.segement-1 > .col2 > .buttons > button:nth-child(1) .segement-1 > .col1 > img:nth-child(2){
+  opacity: 100%;
+}
+
+.buttons > button:nth-child(1):hover,
+.buttons > button:nth-child(2):hover {
   background-color: var(--main-color);
   color: white;
 }
@@ -384,11 +373,7 @@ Dropdown
   border-right: var(--border-settings);
 }
 
-.column1 {
-  display: grid;
-  grid-row: 1fr 1fr;
-}
-
+.column1,
 .column3 {
   display: grid;
   grid-row: 1fr 1fr;
@@ -620,16 +605,8 @@ Dropdown
   align-content: space-around;
 }
 
-.workplace {
-  display: flex;
-  border-bottom: var(--border-settings);
-}
-
-.join {
-  display: flex;
-  border-bottom: var(--border-settings);
-}
-
+.workplace,
+.join,
 .retailers {
   display: flex;
   border-bottom: var(--border-settings);
