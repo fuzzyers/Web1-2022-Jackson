@@ -494,6 +494,15 @@ Dropdown
   margin: 5%;
 }
 
+.h1overlay {
+  display: grid;
+}
+
+.reports > .h1overlay > h1 {
+  grid-column: 1;
+  grid-row: 1;
+}
+
 /*
 ######################
 #   Divider Gap      #
