@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <!--
+        CSS selectors SBA
+
+        We are making some flags! 
+        
+        Use the provided HTML and CSS styles to create the following flags (see the PDF for what the flags should
+        look like...)
+
+        DO NOT change any of the HTML.
+        DO NOT change any of the styles marked 'DO NOT CHANGE'.
+
+        ONLY add the appropriate selectors to the 'blue' and 'red' style definitions below.
+        USE AS FEW SELECTORS AS POSSIBLE - you will receive more marks for fewer styles.
+
+        REMEMBER you can use nth-of-type, first-of-type, last-of-type, not, etc, etc...
+
+        The first one (France) is done for you.
+    -->
+
+    <style>
+    
+        /* DO NOT CHANGE THESE STYLES */
+        .flag{
+            height:120px;
+            width:240px;
+            display:grid;                               
+            margin-bottom:30px;
+            border:1px solid #999;
+        }
+
+        .usa{
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(13, 1fr);
+        }
+
+        .france{
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .hawaii{
+            grid-template-rows: repeat(8, 1fr);
+        }
+
+        .thailand, .costa{
+            grid-template-rows: repeat(6, 1fr);
+        }     
+
+        .usa div:first-of-type{
+            grid-row: 1 / 8;
+            grid-column: 1!important;
+        }
+
+        .usa div:not(:nth-of-type(1n + 9)){
+            grid-column: 2 / 4;
+        }
+
+        .usa div:nth-of-type(1n + 9){
+            grid-column: 1 / 4;
+        }
+
+        /****************************************************/
+
+        /* ADD YOUR SELECTORS HERE */
+        .france div:first-of-type
+        {
+            background:darkblue!important;
+        }
+        
+        .france div:last-of-type
+        {
+            background:red;
+        }
+
+        .usa div:nth-child(even) {
+            background: red;
+        }
+
+        .usa div:nth-child(1){
+            background: darkblue;
+        }
+
+        .hawaii div:nth-of-type(3n+2) {
+            background:red ;
+        }
+
+        .hawaii div:nth-of-type(3n+3) {
+            background:darkblue ;
+        }
+
+        .thailand div:nth-of-type(5n+1) {
+            background:red ;
+        }
+
+        .thailand div:nth-child(3),
+        .thailand div:nth-child(4) {
+            background:darkblue ;
+        }
+        
+
+        .costa div:nth-of-type(5n+1) {
+            background:darkblue ;
+        }
+
+        .costa div:nth-child(3),
+        .costa div:nth-child(4) {
+            background:red ;
+        }
+
+    </style>
+
+    <div>France</div>
+    <div class="flag france">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <div>USA</div>
+    <div class="flag usa">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>        
+    </div>    
+
+    <div>Hawaii</div>
+    <div class="flag hawaii">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>        
+    </div>
+
+    <div>Thailand</div>
+    <div class="flag thailand">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>       
+    </div>
+
+    <div>Costa Rica</div>
+    <div class="flag costa">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>       
+    </div>
+
+
+</body>
+</html>

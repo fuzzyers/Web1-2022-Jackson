@@ -593,6 +593,7 @@ Dropdown
 
 .banner3:hover,
 .banner4:hover {
+  z-index: 5;
   width: 200px;
 }
 
@@ -600,7 +601,6 @@ Dropdown
 .banner4:hover h2 {
   transform: translate(0%) rotate(-90deg) translate(-250%);
 }
-
 
 .banner3 h2,
 .banner4 h2  {
