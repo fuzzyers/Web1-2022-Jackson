@@ -151,15 +151,28 @@ Dropdown
 
 .shop {
   position: relative;
-  display: inline-block;
+}
+
+.drop {
+  display: none;
+  position: absolute;
+  top: var(--nav-height);
+  left: 0px;
+  height: calc(100vh - var(--nav-height));
+  width: 100vw;
+  z-index: 4;
+  background-color: rgba(255 , 255, 255, 0.55);
 }
 
 .shopdrop {
-  display: none;
+  display: inherit;
   position: absolute;
-  top: 39px;
+  left: 0px;
   width: 100vw;
-  background-color: wheat;
+  height: 40vh;
+  background-color: rgb(255, 255, 255);
+  border-top: var(--border-settings);
+  border-bottom: var(--border-settings);
   z-index: 5;
 }
 
@@ -241,8 +254,8 @@ Dropdown
   opacity: 0;
 }
 
-.segement-1 > .col2 > .buttons > button:nth-child(1) .segement-1 > .col1 > img:nth-child(2){
-  opacity: 100%;
+.buttons > button:nth-child(2):hover .col1 > img {
+  opacity: 100;
 }
 
 .buttons > button:nth-child(1):hover,
