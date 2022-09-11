@@ -254,9 +254,6 @@ Dropdown
   opacity: 0;
 }
 
-.buttons > button:nth-child(2):hover .col1 > img {
-  opacity: 100;
-}
 
 .buttons > button:nth-child(1):hover,
 .buttons > button:nth-child(2):hover {
