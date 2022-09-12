@@ -188,6 +188,7 @@ nav {
 .navright {
   justify-content: flex-end;
   padding-top: 12px;
+  padding-right: 40px;
 }
 
 .navleft {
@@ -719,15 +720,23 @@ Dropdown
 }
 
 .workplace,
-.join {
-  display: flex;
-  border-bottom: var(--border-settings);
-  align-items: center;
-}
-
+.join,
 .retailers {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.workplace,
+.join {
+  border-bottom: var(--border-settings);
+}
+
+.col2--70vh > div:nth-of-type(1n) > a {
+  padding-top: 5px;
+  margin-left: 20px;
+  color:#3b8fc7
 }
 
 .workplace > :nth-child(1),
