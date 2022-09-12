@@ -190,8 +190,29 @@ Dropdown
   z-index: 5;
 }
 
-.shopdrop a {
+.flexcontent {
+  display: flex;
+  flex-direction: row ;
+}
+
+.group {
+  padding-left: 60px;
+  padding-right: 150px;
+}
+
+.flexcontent p {
+  width: 250px;
+  padding-right: 50px;
+}
+
+.flexcontent img {
+  height: 200px;
+  width: auto;
+}
+
+.group a {
   text-decoration: none;
+  padding-bottom: 10px;
   display: block;
 }
 

@@ -16,10 +16,14 @@ btn2.addEventListener("mouseleave", e => {
     });
 
 let shopbtn = document.querySelector(".shopbtn");
-shopbtn.addEventListener("mouseenter", e => {
+shopbtn.addEventListener("mouseover", e => {
   document.querySelector(".drop").style.display = "block";
+  shopbtn = document.querySelector(".shopdrop")
+  shopbtn.addEventListener("mouseenter", e => {
+    document.querySelector(".shopdrop").style.display = "block";
+  })
+  shopbtn.addEventListener("mouseleave", e => {
+    document.querySelector(".drop").style.display = "none";
+  })
 });
 
-shopbtn.addEventListener("mouseleave", e => {
-    document.querySelector(".drop").style.display = "none";
-});
