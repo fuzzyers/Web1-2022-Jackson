@@ -697,18 +697,48 @@ Dropdown
   padding: var(--space-70);
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 10% 1fr 10%;
-  margin: 0 10%;
-  gap: 50px;
+.flexxy {
+  display: flex;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
-.grid img {
-  height: 330px;
-  width: auto;
+.flexxy-1,
+.flexxy-2 {
+  display: flex;
+  flex-direction: column;
 }
+
+.flexxy-1 {
+  padding-right: 10px;
+}
+
+.flexxy-2 {
+  padding-left: 10px;
+}
+
+.flexxy-1 h2,
+.flexxy-2 button {
+  margin-bottom: 20px;
+}
+
+.flexxy-1 img,
+.flexxy-2 img {
+  margin-bottom: 10px;
+}
+
+.flexxy-1 h2 {
+  width: 300px;
+}
+
+.flexxy-2 button {
+  margin-top: 38px;
+  align-self: flex-end;
+  background-color: #ffffff;
+  border-color: #80B7DB;
+}
+
+
 
 /*
 ######################
@@ -727,11 +757,35 @@ Dropdown
 
 .newsletter {
   grid-column: 1/3;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.newsletter input {
+  width: 100%;
+  height: 60px;
 }
 
 .con {
   height: 285px;
   background-color: var(--main-color);
+  color: #f5f9fc;
+}
+
+.con-1,
+.con-2,
+.con-3,
+.con-4 {
+  display: flex;
+  flex-direction: column;
+  padding-left: 60px;
+  padding-top: 40px;
+}
+
+
+.con a {
+  padding: 5px;
+  color: #f5f9fc;
 }
 
 .social-group {
@@ -764,11 +818,20 @@ Dropdown
   grid-column: 5;
   grid-row: 1/4;
   background-color: var(--main-color);
+  align-items: center;
+  flex-direction: column;
+  padding: 40px 35px;
+}
+
+.name img:nth-child(2)
+{
+  margin-top: auto;
 }
 
 .credit {
   background-color: var(--main-color);
   grid-column: 1/4;
+  color: #f5f9fc;
 }
 
 
