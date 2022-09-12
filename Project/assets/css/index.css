@@ -52,6 +52,11 @@ h2 {
 h3 {
 }
 
+p {
+  color: var(--main-color);
+  font-size: 1.1rem;
+}
+
 a:hover:not(.navcart--icon) {
   text-decoration: underline;
 }
