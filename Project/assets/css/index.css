@@ -84,6 +84,55 @@ button:hover {
 
 /*
 ######################
+#       Mug          #
+######################
+*/
+
+.coffeemug {
+  display: flex;
+  position:fixed;
+  top: 160px;
+  right: 0;
+  z-index: 7;
+  background-color: #93c6e7;
+  width: 60px;
+  height: 40px;
+  border-top-left-radius: 40%;
+  border-bottom-left-radius: 40% ;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.mug{
+  position: absolute;
+  width: 40px;
+  height: 30px;
+}
+
+.coffeemug h4 {
+  opacity: 0;
+}
+
+.coffeemug:hover {
+  display: flex;
+  width: 100px;
+  justify-content: flex-end;
+}
+
+.coffeemug:hover .mug {
+  position: relative;
+  justify-items:center;
+  width: 40px;
+  height: 30px;
+}
+
+.coffeemug:hover h4 {
+  opacity:1;
+  font-size: xx-small;
+}
+
+/*
+######################
 #     Nav bar        #
 ######################
 */
