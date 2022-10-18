@@ -11,9 +11,7 @@
   --space-80: 80px;
   --space-70: 70px;
   --conend-height: 113px;
-  --featured-height: calc(
-    100vh + var(--nav-height) - var(--break-height) + var(--conend-height)
-  );
+  --featured-height: calc(100vh + var(--nav-height) - var(--break-height) + var(--conend-height));
   --border-settings: 1px solid var(--main-color);
   --stagger-animation: 2000ms;
   --lightasfuck-blue: #f5f9fc;
@@ -651,36 +649,26 @@ Dropdown
   border-right: var(--border-settings);
 }
 
+
+
 .banner4 {
-  position: relative;
-  height: 100%;
-  width: 150px;
-  white-space: nowrap;
   border-right: var(--border-settings);
 }
 
-.banner3:hover,
-.banner4:hover {
+
+.banner3:hover{
   z-index: 5;
   width: 200px;
 }
 
-.banner3:hover h2,
-.banner4:hover h2 {
+.banner3:hover h2{
   transform: translate(0%) rotate(-90deg) translate(-250%);
 }
 
-.banner3 h2,
-.banner4 h2 {
+.banner3 h2 {
   transform: translate(0%) rotate(-90deg) translate(-350%);
 }
 
-.contents1 {
-  grid-template-columns: 1fr 1fr;
-  height: 100%;
-  visibility: hidden;
-  width: 0;
-}
 
 .contents1 img,
 .contents2 img {
@@ -690,7 +678,9 @@ Dropdown
 }
 
 .contents2 {
-  visibility: visible;
+  visibility: hidden;
+  width: 0;
+  overflow: hidden;
 }
 
 /*
