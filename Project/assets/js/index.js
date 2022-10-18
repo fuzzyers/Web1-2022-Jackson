@@ -24,6 +24,7 @@ shopbtn.addEventListener("mouseover", e => {
   })
   shopbtn.addEventListener("mouseleave", e => {
     document.querySelector(".drop").style.display = "none";
+
   })
 });
 

@@ -78,12 +78,14 @@ button {
   width: 230px;
   cursor: pointer;
   margin-top: 20px;
+  transition: ease-out 0.4s;
 }
 
 button:hover {
-  background-color: var(--main-color);
+  box-shadow:inset 400px 0 0 0 var(--main-color);
   color: white;
 }
+
 
 /*
 ######################
@@ -243,7 +245,7 @@ Dropdown
   position: absolute;
   left: 0px;
   width: 100vw;
-  height: 40vh;
+  height: 45vh;
   background-color: rgb(255, 255, 255);
   border-top: var(--border-settings);
   border-bottom: var(--border-settings);
@@ -258,6 +260,7 @@ Dropdown
 .group {
   padding-left: 60px;
   padding-right: 150px;
+  padding-top: 30px;
 }
 
 .flexcontent p {
@@ -266,14 +269,41 @@ Dropdown
 }
 
 .flexcontent img {
-  height: 200px;
-  width: auto;
+  height: 300px;
+  width:auto ;
+  padding: 5px;
+  align-self: flex-end;
 }
 
 .group a {
   text-decoration: none;
   padding-bottom: 10px;
   display: block;
+  padding-bottom: 30px;
+}
+
+
+/*
+######################
+#     popup          #
+######################
+*/
+
+.popup {
+  position: fixed;
+  display: flex;
+  top: calc(100vh - var(--break-height));
+  z-index: 20;
+  justify-content: center;
+  background-color: #93c6e7;
+  width: 100%;
+  border-top: var(--border-settings);
+
+}
+
+.popup h4:nth-child(2){
+  display: flex;
+  text-align: center;
 }
 
 /*
@@ -328,6 +358,7 @@ Dropdown
 .col1 > img:nth-child(2),
 .col1 > img:nth-child(3) {
   opacity: 0;
+  transition: ease-out 0.4s;
 }
 
 .buttons > button:nth-child(2) {

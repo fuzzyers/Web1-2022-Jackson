@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!--
+
+        We are making a skyline!
+
+        Add the appropriate flex and/or grid styles to the styles indicated below to achieve the picture in the PDF.
+
+        - DO NOT CHANGE styles marked as 'DO NOT CHANGE'.
+        - All solutions will be considered... but better marks will be awarded for more concise and elegant solutions.
+
+    -->
+    
+    <style>
+
+        /* DO NOT CHANGE ANY OF THESE EXISTING STYLES */
+
+
+        @keyframes lights {
+			from {
+			filter: hue-rotate(180deg);
+			}
+			to {
+			filter: hue-rotate(0deg);
+			}
+		}
+
+        .building{
+            width:75px;
+            background:black;
+            padding:10px;
+            box-sizing: border-box;
+            gap:10px;
+        }
+        .building1{ height:200px; }
+        .building2{ height:250px; }
+        .building3{ height:100px; }
+        .building4{ height:300px; }
+
+        .window{
+            background:white;
+            height:30px;
+			animation: lights 700ms ease-out;
+			animation-fill-mode: backwards;
+        }
+
+        /* ADD YOUR STYLES HERE */
+
+        .skyline{
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+        }
+
+        .skyline div{
+            display: grid ;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 30px 30px;
+        }
+		
+		
+
+    </style>
+
+    <div class="skyline">
+        <div class="building building1">
+            <div class="window"></div>
+            <div class="window"></div>
+            <div class="window"></div>
+            <div class="window"></div>
+        </div>
+        <div class="building building2">
+            <div class="window"></div>
+            <div class="window"></div>
+            <div class="window"></div>
+            <div class="window"></div>
+        </div>
+        <div class="building building3">
+            <div class="window"></div>
+            <div class="window"></div>
+            <div class="window"></div>
+            <div class="window"></div>
+        </div>
+        <div class="building building1">
+            <div class="window"></div>
+            <div class="window"></div>
+            <div class="window"></div>
+            <div class="window"></div>
+        </div>
+        <div class="building building4">
+            <div class="window"></div>
+            <div class="window"></div>
+            <div class="window"></div>
+            <div class="window"></div>
+        </div>
+    </div>
+
+</body>
+</html>
