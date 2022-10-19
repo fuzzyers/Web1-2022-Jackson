@@ -455,6 +455,7 @@ Dropdown
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   border-bottom: var(--border-settings);
+  height: 70vh;
 }
 
 .future > div:not(.center) > div > img {
