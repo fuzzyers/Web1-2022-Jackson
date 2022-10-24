@@ -16,7 +16,7 @@ btn2.addEventListener("mouseleave", e => {
     });
 
 let shopbtn = document.querySelector(".shopbtn");
-shopbtn.addEventListener("mouseover", e => {
+  shopbtn.addEventListener("mouseover", e => {
   document.querySelector(".drop").style.display = "block";
   shopbtn = document.querySelector(".shopdrop")
   shopbtn.addEventListener("mouseenter", e => {
@@ -27,4 +27,6 @@ shopbtn.addEventListener("mouseover", e => {
 
   })
 });
+
+const URL = "https://api.unsplash.com/";
 
