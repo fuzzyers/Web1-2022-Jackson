@@ -11,11 +11,9 @@
   --space-80: 80px;
   --space-70: 70px;
   --conend-height: 113px;
-  --featured-height: calc(
-    100vh + var(--nav-height) - var(--break-height) + var(--conend-height)
-  );
+  --featured-height: calc(100vh + var(--nav-height) - var(--break-height) + var(--conend-height));
   --border-settings: 1px solid var(--main-color);
-  --stagger-animation: 2000ms;
+  --stagger-animation: 6000ms;
   --lightasfuck-blue: #f5f9fc;
 }
 
@@ -457,6 +455,7 @@ Dropdown
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   border-bottom: var(--border-settings);
+  height: 70vh;
 }
 
 .future > div:not(.center) > div > img {
@@ -595,7 +594,36 @@ Dropdown
 */
 
 .reports {
-  margin: 5%;
+  display: flex;
+  padding: 70px;
+  position: relative;
+  flex-direction: column;
+}
+
+.img5 {
+  width: 100%;
+  height: 1100px;
+}
+
+.buttonshape {
+  width: 300px;
+  height: 300px;
+  z-index: 10;
+  align-self: flex-end;
+  position: absolute;
+  bottom: 150px ;
+  right: 600px;
+  animation: rotate 2000ms infinite;
+}
+
+.buttonshape:hover {
+  background-color: #006eb6;
+  border-radius: 200px;
+}
+
+.buttonshape > svg {
+  width: 300px;
+  height: 300px;
 }
 
 .h1overlay {
@@ -605,15 +633,15 @@ Dropdown
 .reports > .h1overlay > h1 {
   grid-column: 1;
   grid-row: 1;
-  animation: LanguageSwap var(--stagger-animation) ease-out;
+  animation: LanguageSwap var(--stagger-animation) infinite;
 }
 
 .h1overlay > h1:nth-child(1) {
-  animation-delay: calc(1 * var(--stagger-animation));
+  animation-delay: calc(2 * var(--stagger-animation));
 }
 
 .h1overlay > h1:nth-child(2) {
-  animation-delay: calc(1.5 * var(--stagger-animation));
+  animation-delay: calc(1.38 * var(--stagger-animation));
   opacity: 0;
 }
 
@@ -633,6 +661,45 @@ Dropdown
     opacity: 0;
   }
 }
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  10% {
+    opacity: 100;
+    transform: rotate(36deg);
+
+  }
+  20% {
+    transform: rotate(72deg);
+  }
+  30% {
+    transform: rotate(108deg);
+  }
+  40% {
+    transform: rotate(144deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  60% {
+    transform: rotate(216deg);
+  }
+  70% {
+    transform: rotate(252deg);
+  }
+  80% {
+    transform: rotate(288deg);
+  }
+  90% {
+    transform: rotate(334deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 
 /*
 ######################
@@ -682,36 +749,26 @@ Dropdown
   border-right: var(--border-settings);
 }
 
+
+
 .banner4 {
-  position: relative;
-  height: 100%;
-  width: 150px;
-  white-space: nowrap;
   border-right: var(--border-settings);
 }
 
-.banner3:hover,
-.banner4:hover {
+
+.banner3:hover{
   z-index: 5;
   width: 200px;
 }
 
-.banner3:hover h2,
-.banner4:hover h2 {
+.banner3:hover h2{
   transform: translate(0%) rotate(-90deg) translate(-250%);
 }
 
-.banner3 h2,
-.banner4 h2 {
+.banner3 h2 {
   transform: translate(0%) rotate(-90deg) translate(-350%);
 }
 
-.contents1 {
-  grid-template-columns: 1fr 1fr;
-  height: 100%;
-  visibility: hidden;
-  width: 0;
-}
 
 .contents1 img,
 .contents2 img {
@@ -721,7 +778,9 @@ Dropdown
 }
 
 .contents2 {
-  visibility: visible;
+  visibility: hidden;
+  width: 0;
+  overflow: hidden;
 }
 
 /*
