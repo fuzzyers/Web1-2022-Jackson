@@ -472,12 +472,15 @@ Dropdown
   padding: 5%;
 }
 
-.center > img {
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
-  border-left: var(--border-settings);
-  border-right: var(--border-settings);
+.center {
+  background-image: url(//cdn.shopify.com/s/files/1/1530/0579/files/img_sustainability-grid.jpg?v=1637465237);
+  /* Set a specific height */
+  min-height: 100px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .column1,
@@ -513,7 +516,6 @@ Dropdown
   transform: rotate(180deg);
   align-self: center;
   margin-top: 40px;
-  /*I dont understand the transform property reasearch*/
 }
 
 .col--2 {
