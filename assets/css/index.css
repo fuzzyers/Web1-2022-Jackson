@@ -23,7 +23,6 @@
 
 * {
   box-sizing: border-box;
-  
 }
 
 body {
@@ -45,9 +44,6 @@ h2 {
   font-weight: 900;
   color: var(--main-color);
   margin: 0;
-}
-
-h3 {
 }
 
 p {
@@ -743,24 +739,19 @@ Dropdown
 
 .banner3 {
   height: 100%;
-  width: 150px;
+  width: 8vw;
   white-space: nowrap;
-}
-
-.banner3 {
   border-right: var(--border-settings);
 }
-
-
 
 .banner4 {
   border-right: var(--border-settings);
+  width: 8vw;
 }
-
 
 .banner3:hover{
   z-index: 5;
-  width: 200px;
+  width: 10vw;
 }
 
 .banner3:hover h2{
@@ -771,17 +762,27 @@ Dropdown
   transform: translate(0%) rotate(-90deg) translate(-350%);
 }
 
+.banner4 h2 {
+  transform: translate(60%) rotate(-90deg) translate(-50%);
+}
 
 .contents1 img,
 .contents2 img {
   margin: 5%;
-  width: 50%;
-  padding: 10px;
+  width: 100%;
+}
+.contents1{
+  display: flex;
+  flex-direction: row;
+  height: 100%;
 }
 
 .contents2 {
+  display: flex;
+  flex-direction: column;
   visibility: hidden;
   width: 0;
+  height: 100%;
   overflow: hidden;
 }
 
