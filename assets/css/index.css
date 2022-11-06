@@ -745,8 +745,11 @@ Dropdown
 }
 
 .banner4 {
-  border-right: var(--border-settings);
+  position: relative;
+  border-left: var(--border-settings);
   width: 8vw;
+  
+
 }
 
 .banner3:hover{
@@ -763,18 +766,21 @@ Dropdown
 }
 
 .banner4 h2 {
-  transform: translate(60%) rotate(-90deg) translate(-50%);
+  transform: translate(0%) rotate(-90deg) translate(-50%);
+  overflow: hidden;
 }
 
 .contents1 img,
 .contents2 img {
   margin: 5%;
-  width: 100%;
+  width: 50%;
+  object-fit: cover;
 }
 .contents1{
   display: flex;
   flex-direction: row;
   height: 100%;
+  width: 84vw;
 }
 
 .contents2 {
