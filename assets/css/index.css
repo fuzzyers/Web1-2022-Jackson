@@ -737,8 +737,6 @@ Dropdown
   height: calc(100vh - var(--nav-height));
 }
 
-
-
 .base2 {
   position:absolute;
   right: 0;
@@ -765,6 +763,7 @@ Dropdown
 
 .banner4:hover {
   padding-left: 10px;
+  border-left: var(--border-settings);
 }
 
 .rollerimg {
@@ -779,26 +778,7 @@ Dropdown
   transform: translate(-300px);
    white-space: nowrap;
  }
-/* .banner3:hover h2{
-  transform: translate(0%) rotate(-90deg) translate(-250%);
-}
 
-.banner3 h2 {
-  transform: translate(0%) rotate(-90deg) translate(-350%);
-}
-
-.banner4 h2 {
-  transform: translate(0%) rotate(-90deg) translate(-50%);
-  overflow: hidden;
-}
-
-.contents1 img,
-.contents2 img {
-  margin: 5%;
-  width: 50%;
-  object-fit: cover;
-}
- */
 .contents1{
   display: flex;
   position: relative;
