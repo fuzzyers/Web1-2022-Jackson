@@ -16,12 +16,17 @@ The current challenge is the Sliding panels while I have an understanding of how
 Along With I have yet to add a paralax effect which will be important as to complete one of my goals.
 
 ## Bugs
-- When Hovering over Shop dropdown it will not close until you hover over inside of the dropdown.
+### Css
 - Coffee Mug When hovering over Extends to far.
 - Text Animation isnt perfectly synced.
 - Paralax Effect should be less subtle.
+- Rolling Door Hover Effect on Banners having issues with the text.
+- Rolling Door Contents 2 Not correctly Displaying.
+### Js
+- When Hovering over Shop dropdown it will not close until you hover over inside of the dropdown.
 
 Refrences
 - https://www.w3schools.com/howto/howto_css_parallax.asp
+- https://github.com/necolas/idiomatic-css#general-principles
 
 Jacksons Web 1 repository
