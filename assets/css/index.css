@@ -641,6 +641,8 @@ nav {
   opacity: 0;
 }
 
+
+/* Swaps Between English and Maori language text box */
 @keyframes LanguageSwap {
   from {
     opacity: 100;
@@ -658,6 +660,7 @@ nav {
   }
 }
 
+/* Rotate object 360 degrees */
 @keyframes rotate {
   from {
     transform: rotate(0deg);
@@ -724,6 +727,13 @@ nav {
     Location
     ============================================  */
 
+/**
+  * Rolling Door Effect works in a way where 
+  * it swaps between .content1 and .content2 
+  * swap between state of being shown and hidden.
+  *
+  * ToDo: Fix Bug Stopping Padding from working on hover
+**/
 .base1 {
   display: flex;
   border-top: var(--border-settings);
@@ -897,6 +907,12 @@ nav {
 /*  ============================================
     Footer
     ============================================  */
+
+/**
+  * The footer is Made up of a series of grids to
+  * display relvant scoial and other page listing
+  * information.
+**/
 
 .grid-footer {
   display:grid;
