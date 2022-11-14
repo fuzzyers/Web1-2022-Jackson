@@ -66,10 +66,10 @@ let img1 = document.querySelector(".img6");
     base2.style.right = "calc(100% - 244px)"
     rollerright.style.borderRight = "1px solid black"
     rollerright.style.borderLeft = "none"
-    content1.style.visibility = "hidden"
     content2.style.visibility = "visible"
     content2.style.width = "auto"
     content2.style.height = "auto"
+    content1.style.visibility = "hidden"
     content1.style.width = "0"
     content1.style.height = "0"
   })

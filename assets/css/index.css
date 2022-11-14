@@ -17,9 +17,9 @@
   --lightasfuck-blue: #f5f9fc;
 }
 
-/*###########################
-##      Global Settings    ##
-###########################*/
+/*  ============================================
+    Global Settings
+    ============================================  */
 
 * {
   box-sizing: border-box;
@@ -83,11 +83,9 @@ button:hover {
 }
 
 
-/*
-######################
-#       Mug          #
-######################
-*/
+/*  ============================================
+    Mug Overlay Icon
+    ============================================  */
 
 .coffeemug {
   display: flex;
@@ -110,9 +108,7 @@ button:hover {
   height: 30px;
 }
 
-.coffeemug h4 {
-  opacity: 0;
-}
+.coffeemug h4 { opacity: 0;  }
 
 .coffeemug:hover {
   display: flex;
@@ -132,11 +128,9 @@ button:hover {
   font-size: xx-small;
 }
 
-/*
-######################
-#     Nav bar        #
-######################
-*/
+/*  ============================================
+    Navbar
+    ============================================  */
 
 nav {
   position: fixed;
@@ -221,9 +215,22 @@ nav {
   padding-left: 7px;
 }
 
-/*
-Dropdown
-*/
+/*  DropDown for Navbar
+    ============================================  */
+
+/** The Dropdown Menu displays from a hover from
+  * the shop list element.
+  *
+  * The hover effect is done through JavaScript Event
+  * which checks if .drop element has been hovered over
+  * it will then set the .shopdrop element to display
+  * as a block element to show it. 
+  * When hovering off of it the element will be set back
+  * to display none.
+  *
+  * TODO: Stop it from displaying when hovering over the
+  * rest of the navbar.
+**/
 
 .drop {
   display: none;
@@ -279,11 +286,9 @@ Dropdown
 }
 
 
-/*
-######################
-#     popup          #
-######################
-*/
+/*  ============================================
+    Popup
+    ============================================  */
 
 .popup {
   position: fixed;
@@ -302,12 +307,23 @@ Dropdown
   text-align: center;
 }
 
-/*
-######################
-#     Firstsegment   #
-######################
-*/
+/*  ============================================
+    First Page Segment
+    ============================================  */
 
+/**
+  * The Segment is split up into 2 distinct Sides
+  * the Left side Which is the Main Img and 
+  * the right side which is Comprised of some text 
+  * and the 2 Buttons.
+  *
+  * When you hover on 1 of the two buttons the image
+  * will change to another image and when you hover
+  * back off of it, it will return to normal.
+  *
+  * The button will also transition to being blue
+  * when being hovered on.
+**/
 .segement-1 {
   display: grid;
   position: relative;
@@ -351,30 +367,28 @@ Dropdown
   padding-left: 70px;
 }
 
+/* Adds the animation to the buttons */
 .col1 > img:nth-child(2),
 .col1 > img:nth-child(3) {
   opacity: 0;
   transition: ease-out 0.4s;
 }
 
+/*  Stops the Buttons from having a 2 pixel gap   */
 .buttons > button:nth-child(2) {
   margin-left: -1px;
 }
 
-/*
-######################
-#    Break Box       #
-######################
-*/
+/*  ============================================
+    Break Box
+    ============================================  */
 
 .dividergap > .hero {
   display: flex;
   justify-content: center;
 }
 
-.hero li {
-  display: inline-flex;
-}
+.hero li { display: inline-flex; }
 
 .dot::after {
   padding-left: 15%;
@@ -383,9 +397,7 @@ Dropdown
   color: var(--main-color);
 }
 
-.dot {
-  margin-right: 20px;
-}
+.dot { margin-right: 20px; }
 
 .topbar,
 .bottombar {
@@ -397,19 +409,13 @@ Dropdown
   z-index: 1;
 }
 
-.bottombar {
-  top: var(--break-height);
-}
+.bottombar { top: var(--break-height);  }
 
-/*
-######################
-#   historysegement  #
-######################
-*/
+/*  ============================================
+    History Segment
+    ============================================  */
 
-.history {
-  height: var(--history-height);
-}
+.history { height: var(--history-height);  }
 
 .text {
   margin-left: 30%;
@@ -432,11 +438,9 @@ Dropdown
   z-index: 4;
 }
 
-/*
-######################
-#       future       #
-######################
-*/
+/*  ============================================
+    Future Segment
+    ============================================  */
 
 .banner {
   display: flex;
@@ -470,9 +474,7 @@ Dropdown
 
 .center {
   background-image: url(//cdn.shopify.com/s/files/1/1530/0579/files/img_sustainability-grid.jpg?v=1637465237);
-  /* Set a specific height */
   min-height: 100px;
-
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -489,11 +491,9 @@ Dropdown
   border-bottom: var(--border-settings);
 }
 
-/*
-######################
-#      featured      #
-######################
-*/
+/*  ============================================
+    Featured Segement
+    ============================================  */
 
 .featured {
   display: grid;
@@ -585,11 +585,9 @@ Dropdown
   color: var(--main-color);
 }
 
-/*
-######################
-#      reports       #
-######################
-*/
+/*  ============================================
+    Reports
+    ============================================  */
 
 .reports {
   display: flex;
@@ -699,11 +697,9 @@ Dropdown
 }
 
 
-/*
-######################
-#   Divider Gap      #
-######################
-*/
+/*  ============================================
+    Divider Gap
+    ============================================  */
 
 .dividergap2 {
   display: flex;
@@ -724,11 +720,9 @@ Dropdown
   justify-content: right;
 }
 
-/*
-######################
-#   Location         #
-######################
-*/
+/*  ============================================
+    Location
+    ============================================  */
 
 .base1 {
   display: flex;
@@ -762,7 +756,7 @@ Dropdown
 }
 
 .banner4:hover {
-  padding-left: 10px;
+  padding-right: 10px;
   border-left: var(--border-settings);
 }
 
@@ -773,10 +767,10 @@ Dropdown
 }
 
 
-.bannertext h2 {
+.bannertext {
   rotate: -90deg;
-  transform: translate(-300px);
-   white-space: nowrap;
+  transform: translate(-600px);
+  white-space: nowrap;
  }
 
 .contents1{
@@ -794,11 +788,10 @@ Dropdown
   left: 300px;
   overflow: hidden;
 }
-/*
-######################
-#     Workforce      #
-######################
-*/
+
+/*  ============================================
+    Workforce
+    ============================================  */
 
 .workforce {
   display: grid;
