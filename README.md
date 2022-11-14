@@ -15,6 +15,12 @@ At the same time I was also struggling with the implmentation of a Nav bar which
 The current challenge is the Sliding panels while I have an understanding of how to do it i think it will provide an interesting challenge in implementation.
 Along With I have yet to add a paralax effect which will be important as to complete one of my goals.
 
+## Bugs
+- When Hovering over Shop dropdown it will not close until you hover over inside of the dropdown.
+- Coffee Mug When hovering over Extends to far.
+- Text Animation isnt perfectly synced.
+- Paralax Effect should be less subtle.
+
 Refrences
 - https://www.w3schools.com/howto/howto_css_parallax.asp
 
