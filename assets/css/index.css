@@ -472,10 +472,15 @@ nav {
   padding: 5%;
 }
 
+/* Create the parallax scrolling effect */
+
+/**
+  * The image scrolls alot more vigarously
+  * than was ideal
+**/
 .center {
   background-image: url(//cdn.shopify.com/s/files/1/1530/0579/files/img_sustainability-grid.jpg?v=1637465237);
   min-height: 100px;
-  /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -489,6 +494,11 @@ nav {
 
 .future > div:not(.center) > div:nth-child(1) {
   border-bottom: var(--border-settings);
+}
+
+@keyframes blur {
+  0% { -webkit-filter: blur(5px);}
+  100% { -webkit-filter: blur(0px);}
 }
 
 /*  ============================================
@@ -598,7 +608,7 @@ nav {
 
 .img5 {
   width: 100%;
-  height: 1100px;
+  height: 50%;
 }
 
 .buttonshape {
@@ -873,14 +883,7 @@ nav {
 .flexxy-2 {
   display: flex;
   flex-direction: column;
-}
-
-.flexxy-1 {
   padding-right: 10px;
-}
-
-.flexxy-2 {
-  padding-left: 10px;
 }
 
 .flexxy-1 h2,
@@ -888,8 +891,8 @@ nav {
   margin-bottom: 20px;
 }
 
-.flexxy-1 img,
-.flexxy-2 img {
+.flexxy-1 div img,
+.flexxy-2 div img {
   margin-bottom: 10px;
 }
 
@@ -902,6 +905,15 @@ nav {
   align-self: flex-end;
   background-color: #ffffff;
   border-color: #80B7DB;
+}
+
+.imgReadCon {
+  display: flex;
+}
+
+h4 {
+  
+  
 }
 
 /*  ============================================
