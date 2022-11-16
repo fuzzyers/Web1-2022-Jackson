@@ -221,11 +221,23 @@ nav {
   align-items: center;
 }
 
+.ball,
 .slider {
   border: var(--border-settings);
   border-radius: 30px;
   width: 30px;
   height: 13px;
+  z-index: 11;
+}
+
+.slider:hover{
+  cursor: pointer;
+}
+
+.ball {
+  width: 15px;
+  background-color: var(--main-color);
+  z-index: 10;
 }
 
 /*  DropDown for Navbar
@@ -890,6 +902,12 @@ nav {
 .retailers > :nth-child(1) {
   margin-left: 20px;
 }
+
+.workgroup > :nth-child(3) {
+  visibility: hidden;
+  align-self: flex-end;
+}
+
 
 /*  ============================================
     Stuff

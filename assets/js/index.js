@@ -18,7 +18,8 @@ let content2 = document.querySelector(".contents2");
 let base2 = document.querySelector(".base2");
 let img1 = document.querySelector(".img6");
 let imghover = document.querySelectorAll(".imghov");
-
+let workgroup = document.querySelectorAll(".workgroup");
+let arrow = document.querySelectorAll(".arrow");
 
 
 btn.addEventListener("mouseenter", e => {
@@ -53,6 +54,15 @@ imghover.forEach((image) => {
     image.addEventListener("mouseleave", e => {
       image.nextElementSibling.style.visibility = "hidden"
     })
+})
+
+workgroup.forEach((image) => {
+  image.addEventListener("mouseover", e => {
+    image.firstChild.nextElementSibling.nextElementSibling.nextElementSibling.style.visibility = "visible"
+  });
+  image.addEventListener("mouseleave", e => {
+    image.firstChild.nextElementSibling.nextElementSibling.nextElementSibling.style.visibility = "hidden"
+  })
 })
   
 
