@@ -21,7 +21,7 @@ let imghover = document.querySelectorAll(".imghov");
 let workgroup = document.querySelectorAll(".workgroup");
 let arrow = document.querySelectorAll(".arrow");
 
-
+//  Event for handling navbar dropdown menu
 btn.addEventListener("mouseenter", e => {
       document.querySelector(".btn1").style.opacity = 1;
     });
@@ -47,6 +47,7 @@ btn2.addEventListener("mouseleave", e => {
   })
 });
 
+// Event for Showing "Read" text above image on hover
 imghover.forEach((image) => {
     image.addEventListener("mouseover", e => {
       image.nextElementSibling.style.visibility = "visible"
@@ -56,6 +57,8 @@ imghover.forEach((image) => {
     })
 })
 
+
+// Event for Showing arrows on hover
 workgroup.forEach((image) => {
   image.addEventListener("mouseover", e => {
     image.firstChild.nextElementSibling.nextElementSibling.nextElementSibling.style.visibility = "visible"
@@ -65,7 +68,7 @@ workgroup.forEach((image) => {
   })
 })
   
-
+// Image Api it assigns random images to an array of images
 fetch(`${BASE_URL}/search/photos?query=coffee&client_id=LD9S7v_CkSIIMCO8_sgb1YPCHLrGqAsBJRcLdYQgXsc`)
  .then(response => response.json())
  .then(data => {
@@ -75,6 +78,7 @@ fetch(`${BASE_URL}/search/photos?query=coffee&client_id=LD9S7v_CkSIIMCO8_sgb1YPC
   }
 }) 
 
+// Handles oppening and closing roller doors
   rollerright.addEventListener("click", e =>{
     base2.style.right = "calc(100% - 244px)"
     rollerright.style.borderRight = "1px solid #006eb6"
@@ -99,6 +103,7 @@ fetch(`${BASE_URL}/search/photos?query=coffee&client_id=LD9S7v_CkSIIMCO8_sgb1YPC
     content2.style.height = "0"
   })
 
+  // Checks viewport and assigns blur animation effect on image.
   function isInViewport(item) {
     let bounding = item.getBoundingClientRect(),
         myElementHeight = item.offsetHeight,
