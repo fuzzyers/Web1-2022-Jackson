@@ -52,16 +52,9 @@ fetch(`${BASE_URL}/search/photos?query=coffee&client_id=LD9S7v_CkSIIMCO8_sgb1YPC
   }
 }) 
 
-  rollerleft.addEventListener("mouseover", e => {
-    content1.style.left = "90px"
-  })
-  rollerleft.addEventListener("mouseleave", e =>{
-    content1.style.left = "100px"
-  })
-
   rollerright.addEventListener("click", e =>{
     base2.style.right = "calc(100% - 244px)"
-    rollerright.style.borderRight = "1px solid black"
+    rollerright.style.borderRight = "1px solid #006eb6"
     rollerright.style.borderLeft = "none"
     content2.style.visibility = "visible"
     content2.style.width = "auto"
@@ -74,7 +67,7 @@ fetch(`${BASE_URL}/search/photos?query=coffee&client_id=LD9S7v_CkSIIMCO8_sgb1YPC
   rollerleft.addEventListener("click", e =>{
     base2.style.right = "0"
     rollerright.style.borderRight = "none"
-    rollerright.style.borderLeft = "1px solid black"
+    rollerright.style.borderLeft = "1px solid #006eb6"
     content1.style.visibility = "visible"
     content1.style.width = "auto"
     content1.style.height = "auto"
@@ -84,7 +77,6 @@ fetch(`${BASE_URL}/search/photos?query=coffee&client_id=LD9S7v_CkSIIMCO8_sgb1YPC
   })
 
   function isInViewport(item) {
-
     let bounding = item.getBoundingClientRect(),
         myElementHeight = item.offsetHeight,
         myElementWidth = item.offsetWidth;
