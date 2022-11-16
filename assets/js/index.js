@@ -17,6 +17,10 @@ let content1 = document.querySelector(".contents1");
 let content2 = document.querySelector(".contents2");
 let base2 = document.querySelector(".base2");
 let img1 = document.querySelector(".img6");
+let imghover = document.querySelectorAll(".imgReadCon");
+let imgtext = document.querySelectorAll(".overlay ");
+
+
 
 btn.addEventListener("mouseenter", e => {
       document.querySelector(".btn1").style.opacity = 1;
@@ -42,6 +46,18 @@ btn2.addEventListener("mouseleave", e => {
     document.querySelector(".drop").style.display = "none";
   })
 });
+
+imghover.forEach((image) => {
+  imgtext.forEach ((text) => {
+    image.addEventListener("mouseover", e => {
+      text.style.visibility = "visible"
+    });
+    image.addEventListener("mousleave", e => {
+      text.style.visibility = "hidden"
+    })
+  })
+})
+  
 
 fetch(`${BASE_URL}/search/photos?query=coffee&client_id=LD9S7v_CkSIIMCO8_sgb1YPCHLrGqAsBJRcLdYQgXsc`)
  .then(response => response.json())

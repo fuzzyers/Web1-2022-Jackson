@@ -935,12 +935,15 @@ nav {
 }
 
 .imgReadCon {
-  display: flex;
+  position: relative;
 }
 
-h4 {
-  
-  
+.overlay {
+  position: absolute;
+  visibility: hidden;
+  bottom: 17px;
+  right: 20px;
+  rotate: 270deg;
 }
 
 /*  ============================================
