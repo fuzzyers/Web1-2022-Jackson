@@ -17,8 +17,7 @@ let content1 = document.querySelector(".contents1");
 let content2 = document.querySelector(".contents2");
 let base2 = document.querySelector(".base2");
 let img1 = document.querySelector(".img6");
-let imghover = document.querySelectorAll(".imgReadCon");
-let imgtext = document.querySelectorAll(".overlay ");
+let imghover = document.querySelectorAll(".imghov");
 
 
 
@@ -48,14 +47,12 @@ btn2.addEventListener("mouseleave", e => {
 });
 
 imghover.forEach((image) => {
-  imgtext.forEach ((text) => {
     image.addEventListener("mouseover", e => {
-      text.style.visibility = "visible"
+      image.nextElementSibling.style.visibility = "visible"
     });
-    image.addEventListener("mousleave", e => {
-      text.style.visibility = "hidden"
+    image.addEventListener("mouseleave", e => {
+      image.nextElementSibling.style.visibility = "hidden"
     })
-  })
 })
   
 
