@@ -82,6 +82,11 @@ button:hover {
   color: white;
 }
 
+.fa-bars::before {
+  font-size: 0em;
+}
+
+
 
 /*  ============================================
     Mug Overlay Icon
@@ -922,6 +927,7 @@ nav {
   display: flex;
   margin-left: 5%;
   margin-right: 5%;
+  justify-content: center;
 }
 
 .flexxy-1,
@@ -1083,6 +1089,15 @@ nav {
     ============================================  */
 
 @media only screen and (max-width: 960px) {
+  .navright > li ,
+  .navleft > li :not(.hamburg){
+    display: none;
+  }
+
+  .hamburg {
+    font-size: 1.5em;
+  }
+
   .segement-1 {
     display: grid;
     grid-template-rows: 1fr 1fr;
