@@ -22,11 +22,27 @@ Along With I have yet to add a paralax effect which will be important as to comp
 - Paralax Effect should be less subtle.
 - Rolling Door Hover Effect on Banners having issues with the text.
 - Rolling Door Contents 2 Not correctly Displaying.
+- Issue Resposive Not displaying Hamburger Icon
 ### Js
 - When Hovering over Shop dropdown it will not close until you hover over inside of the dropdown.
 
-Refrences
+## Refrences
 - https://www.w3schools.com/howto/howto_css_parallax.asp
 - https://github.com/necolas/idiomatic-css#general-principles
+
+## Future Additions
+### Responsive
+- Nav Bar
+> The Navbar Requires a design which will hide all tokens on the navbar except for the cart item counter and search icon and replace them with a Hamburger on the Left
+along with replacing the Kokako Text Title with the Kokako Favicon as the home Button.
+- Future Segment
+> The Future Segement Image needs to scale back and obtain a margin in the box.
+- Coffee Icon
+> The Coffee Icon hovering on the page needs some nicer styling to it.
+- Featured Goods
+> Needs Redesigned for in reponsive so the shop items display in a column opposed to a row.
+- Roller Door
+> Roller door needs to display in column opposed to in row.
+
 
 Jacksons Web 1 repository
