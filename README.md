@@ -1,5 +1,10 @@
 # Web1-2022-Jackson
 ## Kokako Assesment Website
+### This Website Design has Been Tested On
+- Google
+- FireFox
+- Edge
+- Opera GX (Slight Diffrence)
 
 This project has been undertaken using pure Html, Css and Javascript as learning experience and a first steps into webdevelopment.
 > It has been designed from the New Zealand Coffee distributer Kokakos Website https://www.kokako.co.nz/ 
