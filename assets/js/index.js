@@ -128,14 +128,22 @@ function isInViewport(item) {
   let searchbutton = document.querySelector(".searchbtn")
   let searchbar = document.querySelector(".Searchbar")
   let searchbaractive = false;
+  let close = document.querySelector(".close")
 
   searchbutton.addEventListener("click", e =>{
-    if (!searchbaractive){
-      searchbar.style.display = "block";
-      searchbaractive = true
-    }
-    else {
+    if (searchbaractive){
       searchbar.style.display = "none"
       searchbaractive = false
     }
+    else {
+      searchbar.style.display = "block";
+      searchbaractive = true
+    }
   })
+
+  close.addEventListener("click", e => {
+    searchbar.style.display = "none"
+      searchbaractive = false
+  })
+
+  
