@@ -51,20 +51,22 @@ p {
   font-size: 1.1rem;
 }
 
-a:hover:not(.navcart--icon) {
-  text-decoration: underline;
-}
-
 li {
   list-style: none;
 }
 
+.searchbtn,
 a {
   font-family: var(--main-font);
   color: var(--main-color);
   font-size: 14px;
   text-decoration: none;
   font-weight: 550;
+  cursor:pointer;
+}
+
+a:hover:not(.navcart--icon) {
+  text-decoration: underline;
 }
 
 button {
@@ -82,8 +84,8 @@ button:hover {
   color: white;
 }
 
-.fa-bars::before {
-  font-size: 0em;
+i {
+  font-size: 1.3em;
 }
 
 
@@ -314,6 +316,43 @@ nav {
   padding-bottom: 10px;
   padding-bottom: 30px;
 }
+
+/*  Search Bar
+    ============================================  */
+
+/** 
+  *
+**/
+
+.Searchbar {
+  position: absolute;
+  top: var(--nav-height);
+  width: 100%;
+  left: 0;
+  display: none;
+}
+
+.Searchbar .close i,
+.Searchbar .close p,
+.Searchbar i {
+  position: absolute;
+  top: 41px;
+  left: 5px;
+  font-size: 1.5rem;
+  color: var(--main-color);
+}
+
+.Searchbar .close i, 
+.Searchbar .close p {
+  left: 95%;
+}
+
+.search {
+  width: 100%;
+  padding:40px ;
+  font-size: 1.5rem;
+}
+
 
 
 /*  ============================================
@@ -1075,14 +1114,7 @@ nav {
     Ignore for now
     ============================================  */
 
-.Searchbar {
-  position: absolute;
-  padding: 40px 105px;
-  width: 100px;
-  top: 100px;
-  left: 0;
-  display: none;
-}
+
 
 /*  ============================================
     Media Query
