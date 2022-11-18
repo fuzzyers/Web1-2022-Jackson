@@ -1,5 +1,8 @@
 const BASE_URL = `https://api.unsplash.com`;
 const blurani = document.querySelector(".center");
+
+// Could be refactored to a queeryselectorall instead of
+// an array need to give class in html for this
 const IMGS = [document.querySelector(".default"),
 document.querySelector(".btn1"),
 document.querySelector(".btn2"),
@@ -11,12 +14,6 @@ document.querySelector(".img8")]
 let btn = document.querySelector("#btn1");
 let btn2 = document.querySelector("#btn2");
 let shopbtn = document.querySelector(".shopbtn");
-let rollerleft = document.querySelector(".banner3");
-let rollerright = document.querySelector(".banner4")
-let content1 = document.querySelector(".contents1");
-let content2 = document.querySelector(".contents2");
-let base2 = document.querySelector(".base2");
-let img1 = document.querySelector(".img6");
 let imghover = document.querySelectorAll(".imghov");
 let workgroup = document.querySelectorAll(".workgroup");
 let arrow = document.querySelectorAll(".arrow");
@@ -34,38 +31,38 @@ btn2.addEventListener("mouseenter", e => {
 });
 btn2.addEventListener("mouseleave", e => {
   document.querySelector(".btn2").style.opacity = 0;
-    });
-    
-    shopbtn.addEventListener("mouseover", e => {
-      document.querySelector(".drop").style.display = "block";
-      shopbtn = document.querySelector(".shopdrop")
-      shopbtn.addEventListener("mouseenter", e => {
-        document.querySelector(".shopdrop").style.display = "block";
-      })
-      shopbtn.addEventListener("mouseleave", e => {
-        document.querySelector(".drop").style.display = "none";
-      })
-    });
-    
-    // Event for Showing "Read" text above image on hover
-    imghover.forEach((image) => {
-      image.addEventListener("mouseover", e => {
-        image.nextElementSibling.style.visibility = "visible"
-      });
-      image.addEventListener("mouseleave", e => {
-        image.nextElementSibling.style.visibility = "hidden"
-      })
-    })
-    
-    
-    // Event for Showing arrows on hover
-    workgroup.forEach((image) => {
-      image.addEventListener("mouseover", e => {
-        image.firstChild.nextElementSibling.nextElementSibling.nextElementSibling.style.visibility = "visible"
-      });
-      image.addEventListener("mouseleave", e => {
-        image.firstChild.nextElementSibling.nextElementSibling.nextElementSibling.style.visibility = "hidden"
-      })
+});
+
+shopbtn.addEventListener("mouseover", e => {
+  document.querySelector(".drop").style.display = "block";
+  shopbtn = document.querySelector(".shopdrop")
+  shopbtn.addEventListener("mouseenter", e => {
+    document.querySelector(".shopdrop").style.display = "block";
+  })
+  shopbtn.addEventListener("mouseleave", e => {
+    document.querySelector(".drop").style.display = "none";
+  })
+});
+
+// Event for Showing "Read" text above image on hover
+imghover.forEach((image) => {
+  image.addEventListener("mouseover", e => {
+    image.nextElementSibling.style.visibility = "visible"
+  });
+  image.addEventListener("mouseleave", e => {
+    image.nextElementSibling.style.visibility = "hidden"
+  })
+})
+
+
+// Event for Showing arrows on hover
+workgroup.forEach((image) => {
+  image.addEventListener("mouseover", e => {
+    image.firstChild.nextElementSibling.nextElementSibling.nextElementSibling.style.visibility = "visible"
+  });
+  image.addEventListener("mouseleave", e => {
+    image.firstChild.nextElementSibling.nextElementSibling.nextElementSibling.style.visibility = "hidden"
+  })
 })
 
 // Image Api it assigns random images to an array of images
@@ -79,6 +76,13 @@ fetch(`${BASE_URL}/search/photos?query=coffee&client_id=LD9S7v_CkSIIMCO8_sgb1YPC
 }) 
 
 // Handles oppening and closing roller doors
+// Needs to be ractored far too much going on
+let rollerleft = document.querySelector(".banner3");
+let rollerright = document.querySelector(".banner4")
+let content1 = document.querySelector(".contents1");
+let content2 = document.querySelector(".contents2");
+let base2 = document.querySelector(".base2");
+
 rollerright.addEventListener("click", e =>{
   base2.style.right = "calc(100% - 244px)"
   rollerright.style.borderRight = "1px solid #006eb6"
@@ -104,6 +108,8 @@ rollerleft.addEventListener("click", e =>{
 })
 
 // Checks viewport and assigns blur animation effect on image.
+// Uses resources from stack overflow
+// https://stackoverflow.com/questions/68441473/how-can-i-trigger-this-animation-to-start-once-in-viewport
 function isInViewport(item) {
   let bounding = item.getBoundingClientRect(),
   myElementHeight = item.offsetHeight,
@@ -125,6 +131,8 @@ function isInViewport(item) {
     }
   });
 
+
+  //Close and Open Searchbar
   let searchbutton = document.querySelector(".searchbtn")
   let searchbar = document.querySelector(".Searchbar")
   let searchbaractive = false;
