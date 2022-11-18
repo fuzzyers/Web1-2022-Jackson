@@ -48,6 +48,7 @@ along with replacing the Kokako Text Title with the Kokako Favicon as the home B
 > Needs Redesigned for in reponsive so the shop items display in a column opposed to a row.
 - Roller Door
 > Roller door needs to display in column opposed to in row.
-
+### Otther things
+- Add a close button for the popup
 
 Jacksons Web 1 repository
