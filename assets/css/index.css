@@ -11,7 +11,9 @@
   --space-80: 80px;
   --space-70: 70px;
   --conend-height: 113px;
-  --featured-height: calc(100vh + var(--nav-height) - var(--break-height) + var(--conend-height));
+  --featured-height: calc(
+    100vh + var(--nav-height) - var(--break-height) + var(--conend-height)
+  );
   --border-settings: 1px solid var(--main-color);
   --stagger-animation: 6000ms;
   --lightasfuck-blue: #f5f9fc;
@@ -62,7 +64,7 @@ a {
   font-size: 14px;
   text-decoration: none;
   font-weight: 550;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 a:hover:not(.navcart--icon) {
@@ -80,7 +82,7 @@ button {
 }
 
 button:hover {
-  box-shadow:inset 400px 0 0 0 var(--main-color);
+  box-shadow: inset 400px 0 0 0 var(--main-color);
   color: white;
 }
 
@@ -88,15 +90,13 @@ i {
   font-size: 1.3em;
 }
 
-
-
 /*  ============================================
     Mug Overlay Icon
     ============================================  */
 
 .coffeemug {
   display: flex;
-  position:fixed;
+  position: fixed;
   top: 160px;
   right: 0;
   z-index: 7;
@@ -104,18 +104,20 @@ i {
   width: 60px;
   height: 40px;
   border-top-left-radius: 40%;
-  border-bottom-left-radius: 40% ;
+  border-bottom-left-radius: 40%;
   align-items: center;
   justify-content: flex-end;
 }
 
-.mug{
+.mug {
   position: absolute;
   width: 40px;
   height: 30px;
 }
 
-.coffeemug h4 { opacity: 0;  }
+.coffeemug h4 {
+  opacity: 0;
+}
 
 .coffeemug:hover {
   display: flex;
@@ -125,13 +127,13 @@ i {
 
 .coffeemug:hover .mug {
   position: relative;
-  justify-items:center;
+  justify-items: center;
   width: 40px;
   height: 30px;
 }
 
 .coffeemug:hover h4 {
-  opacity:1;
+  opacity: 1;
   font-size: xx-small;
 }
 
@@ -237,7 +239,7 @@ nav {
   z-index: 11;
 }
 
-.slider:hover{
+.slider:hover {
   cursor: pointer;
 }
 
@@ -305,7 +307,7 @@ nav {
 
 .flexcontent img {
   align-self: flex-end;
-  width:auto ;
+  width: auto;
   height: 300px;
   padding: 5px;
 }
@@ -319,10 +321,6 @@ nav {
 
 /*  Search Bar
     ============================================  */
-
-/** 
-  *
-**/
 
 .Searchbar {
   position: absolute;
@@ -342,18 +340,16 @@ nav {
   color: var(--main-color);
 }
 
-.Searchbar .close i, 
+.Searchbar .close i,
 .Searchbar .close p {
   left: 95%;
 }
 
 .search {
   width: 100%;
-  padding:40px ;
+  padding: 40px;
   font-size: 1.5rem;
 }
-
-
 
 /*  ============================================
     Popup
@@ -368,10 +364,9 @@ nav {
   background-color: #93c6e7;
   width: 100%;
   border-top: var(--border-settings);
-
 }
 
-.popup h4:nth-child(2){
+.popup h4:nth-child(2) {
   display: flex;
   text-align: center;
 }
@@ -404,7 +399,9 @@ nav {
   height: calc(100vh - var(--nav-height) - var(--break-height));
 }
 
-.col1 { position: relative; }
+.col1 {
+  position: relative;
+}
 
 .col1 > img {
   position: absolute;
@@ -472,15 +469,23 @@ nav {
   z-index: 1;
 }
 
-.hero li { display: inline-flex; }
-.dot { margin-right: 20px; }
-.bottombar { top: var(--break-height);  }
+.hero li {
+  display: inline-flex;
+}
+.dot {
+  margin-right: 20px;
+}
+.bottombar {
+  top: var(--break-height);
+}
 
 /*  ============================================
     History Segment
     ============================================  */
 
-.history { height: var(--history-height);  }
+.history {
+  height: var(--history-height);
+}
 
 .text {
   margin-left: 30%;
@@ -567,8 +572,12 @@ nav {
 }
 
 @keyframes blur {
-  0% { -webkit-filter: blur(5px);}
-  100% { -webkit-filter: blur(0px);}
+  0% {
+    -webkit-filter: blur(5px);
+  }
+  100% {
+    -webkit-filter: blur(0px);
+  }
 }
 
 /*  ============================================
@@ -687,7 +696,7 @@ nav {
   z-index: 10;
   align-self: flex-end;
   position: absolute;
-  bottom: 150px ;
+  bottom: 150px;
   right: 600px;
   animation: rotate 2000ms infinite;
 }
@@ -721,7 +730,6 @@ nav {
   opacity: 0;
 }
 
-
 /* Swaps Between English and Maori language text box */
 @keyframes LanguageSwap {
   from {
@@ -748,7 +756,6 @@ nav {
   10% {
     opacity: 100;
     transform: rotate(36deg);
-
   }
   20% {
     transform: rotate(72deg);
@@ -778,7 +785,6 @@ nav {
     transform: rotate(360deg);
   }
 }
-
 
 /*  ============================================
     Divider Gap
@@ -822,7 +828,7 @@ nav {
 }
 
 .base2 {
-  position:absolute;
+  position: absolute;
   right: 0;
   height: calc(100vh - var(--nav-height));
 }
@@ -833,7 +839,7 @@ nav {
   border-right: var(--border-settings);
 }
 
-.banner3:hover{
+.banner3:hover {
   padding-right: 10px;
   border-right: var(--border-settings);
 }
@@ -863,9 +869,9 @@ nav {
   rotate: -90deg;
   transform: translate(-600px);
   white-space: nowrap;
- }
+}
 
-.contents1{
+.contents1 {
   display: flex;
   position: relative;
   left: 100px;
@@ -886,7 +892,7 @@ nav {
   flex-direction: row;
 }
 
-.innertext{
+.innertext {
   margin-top: 30px;
   width: 20vw;
   padding-left: 20px;
@@ -938,7 +944,7 @@ nav {
 .col2--70vh > div:nth-of-type(1n) > a {
   padding-top: 5px;
   margin-left: 20px;
-  color:#3b8fc7
+  color: #3b8fc7;
 }
 
 .workplace > :nth-child(1),
@@ -951,7 +957,6 @@ nav {
   visibility: hidden;
   align-self: flex-end;
 }
-
 
 /*  ============================================
     Stuff
@@ -994,7 +999,7 @@ nav {
   margin-top: 38px;
   align-self: flex-end;
   background-color: #ffffff;
-  border-color: #80B7DB;
+  border-color: #80b7db;
 }
 
 .imgReadCon {
@@ -1022,10 +1027,10 @@ nav {
 **/
 
 .grid-footer {
-  display:grid;
-  grid-template-columns: 25vw 25vw 25vw 15vw 10vw ;
-  grid-column-gap:1px ;
-  grid-row-gap:1px ;
+  display: grid;
+  grid-template-columns: 25vw 25vw 25vw 15vw 10vw;
+  grid-column-gap: 1px;
+  grid-row-gap: 1px;
   overflow: hidden;
   background-color: #f5f9fc;
 }
@@ -1057,7 +1062,6 @@ nav {
   padding-top: 40px;
 }
 
-
 .con a {
   padding: 5px;
   color: #f5f9fc;
@@ -1077,16 +1081,14 @@ nav {
   justify-content: center;
 }
 
-.social img:nth-of-type(1n)
-{
+.social img:nth-of-type(1n) {
   height: 50px;
   width: 50px;
 }
 
-.social-group div:nth-of-type(1n)
- {
+.social-group div:nth-of-type(1n) {
   background-color: var(--main-color);
- }
+}
 
 .name {
   display: flex;
@@ -1098,8 +1100,7 @@ nav {
   padding: 40px 35px;
 }
 
-.name img:nth-child(2)
-{
+.name img:nth-child(2) {
   margin-top: auto;
 }
 
@@ -1109,20 +1110,13 @@ nav {
   color: #f5f9fc;
 }
 
-
-/*  ============================================
-    Ignore for now
-    ============================================  */
-
-
-
 /*  ============================================
     Media Query
     ============================================  */
 
 @media only screen and (max-width: 960px) {
-  .navright > li ,
-  .navleft > li :not(.hamburg){
+  .navright > li,
+  .navleft > li :not(.hamburg) {
     display: none;
   }
 
